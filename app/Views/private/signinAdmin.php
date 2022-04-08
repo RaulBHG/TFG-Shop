@@ -18,7 +18,7 @@
                        <?= session()->getFlashdata('msg') ?>
                     </div>
                 <?php endif;?>
-                <form action="<?php echo base_url(); ?>/SigninController/loginAuth" method="post">
+                <form action="<?php echo base_url(); ?>/admin/loginAuth" method="post">
                     <div class="form-group mb-3">
                         <input type="email" name="email" placeholder="Email" value="<?= set_value('email') ?>" class="form-control" required>
                     </div>

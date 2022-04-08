@@ -12,7 +12,7 @@ class SigninController extends Controller{
 
     }
 
-    public function loginAuth(){        
+    public function loginAuth(){
         $session = session();
         $adminModel = new AdminModel();
         $email = $this->request->getPost('email');

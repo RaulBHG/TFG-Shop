@@ -10,6 +10,7 @@
     <?php
         $session = session();
         echo "Hello ".$session->get("email");
+        $session->set("isLoggedIn", FALSE);
     ?>
 </body>
 </html>
