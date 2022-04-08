@@ -1,0 +1,91 @@
+CRITICAL - 2022-04-08 11:48:24 --> Undefined constant "base_url"
+#0 C:\xampp\htdocs\TFG-Shop\system\Filters\Filters.php(173): App\Filters\AuthGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('adminPage', 'before')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-08 11:48:41 --> Class "App\Models\AdminModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-08 11:50:13 --> Class "App\Models\AdminModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-08 11:50:22 --> Class "App\Models\AdminModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-08 11:51:51 --> Call to undefined method App\Controllers\SigninController::getPost()
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-04-08 11:55:34 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-08 11:55:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\TFG-Shop\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\TFG-Shop\app\Controllers\SigninController.php(21): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\SigninController->loginAuth()
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-08 11:56:10 --> No database selected
+CRITICAL - 2022-04-08 11:56:10 --> No database selected
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\TFG-Shop\app\Controllers\SigninController.php(21): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\SigninController->loginAuth()
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-08 11:56:30 --> Undefined variable $session
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\SigninController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\SigninController.php(40): App\Controllers\SigninController->incorrectLogin()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\SigninController->loginAuth()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-08 11:56:52 --> Undefined variable $session
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\SigninController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\SigninController.php(40): App\Controllers\SigninController->incorrectLogin()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\SigninController->loginAuth()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-08 11:59:03 --> Call to undefined function App\Controllers\alert()
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\SigninController.php(40): App\Controllers\SigninController->incorrectLogin()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\SigninController->loginAuth()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-08 12:13:23 --> Undefined variable $session
+#0 C:\xampp\htdocs\TFG-Shop\app\Views\private\adminPage.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\TFG-Shop\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\TFG-Shop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('private/adminPa...', Array, true)
+#4 C:\xampp\htdocs\TFG-Shop\app\Controllers\AdminController.php(10): view('private/adminPa...')
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\AdminController->index()
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}

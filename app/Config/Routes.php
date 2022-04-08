@@ -33,6 +33,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+$routes->add('/admin', 'Admins/SigninController::index');
+$routes->add('/adminPage', 'Admins/AdminController::index', ['filter' => 'authGuard']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
