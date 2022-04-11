@@ -1,0 +1,290 @@
+CRITICAL - 2022-04-11 15:05:00 --> Undefined variable $adminModel
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\UserAdmin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 15)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\SigninController.php(21): App\Entities\UserAdmin->findAdmin('raulblazquez@gm...')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-11 15:07:45 --> Cannot use object of type App\Entities\UserAdmin as array
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 15:13:43 --> Cannot redeclare App\Entities\UserAdmin::$attributes
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-11 15:14:02 --> Cannot use object of type App\Entities\UserAdmin as array
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 15:19:51 --> Attempt to read property "password" on array
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\SigninController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 15:21:32 --> Class "App\Controllers\Admins\AdminModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 15:21:57 --> Class "App\Controllers\Admins\AdminModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 15:22:22 --> Attempt to read property "password" on array
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\SigninController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 15:22:43 --> Attempt to read property "password" on array
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\SigninController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 15:24:28 --> Call to a member function getEmail() on array
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 15:25:46 --> Cannot use object of type App\Entities\UserAdmin as array
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 15:26:19 --> Cannot use object of type App\Entities\UserAdmin as array
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\SigninController->loginAuth()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\SigninController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 15:46:45 --> Undefined constant "App\Controllers\Admins\Product"
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 15:47:25 --> Undefined constant "App\Controllers\Admins\ProductModel"
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 15:51:15 --> Class "products" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(15): App\Controllers\Admins\AdminController->insertElement('products')
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 15:51:35 --> Undefined variable $db
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(15): App\Controllers\Admins\AdminController->insertElement('products')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-11 15:52:46 --> syntax error, unexpected token "private"
+#0 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 15:54:58 --> Undefined variable $db
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(16): App\Controllers\Admins\AdminController->insertElement('products')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-11 15:55:08 --> Undefined variable $db
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(16): App\Controllers\Admins\AdminController->insertElement('products')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-11 15:56:21 --> Undefined variable $element
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(16): App\Controllers\Admins\AdminController->insertElement('products')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-11 15:56:46 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-04-11 15:56:46 --> Duplicate entry '0' for key 'PRIMARY'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(16): App\Controllers\Admins\AdminController->insertElement('products')
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-04-11 15:57:07 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-04-11 15:57:07 --> Duplicate entry '0' for key 'PRIMARY'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(16): App\Controllers\Admins\AdminController->insertElement('products')
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-11 15:58:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(16): App\Controllers\Admins\AdminController->insertElement('products')
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 15:59:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(16): App\Controllers\Admins\AdminController->insertElement('products')
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-11 16:00:01 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-04-11 16:00:01 --> Duplicate entry '0' for key 'PRIMARY'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(16): App\Controllers\Admins\AdminController->insertElement('products')
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-11 16:21:15 --> Class "App\Controllers\Admins\Product" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 16:21:53 --> Call to undefined method App\Entities\Product::insertData()
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(17): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 16:22:20 --> Class "App\Entities\ProductModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Product->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(17): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-11 16:22:47 --> Class "CodeIgniter\Models\ProductModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Product->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(17): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-11 16:23:07 --> Class "CodeIgniter\Models\ProductModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Product->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(17): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-11 16:23:27 --> Class "CodeIgniter\Models\ProductModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Product->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(17): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-11 16:23:34 --> Class "CodeIgniter\Models\ProductModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Product->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(17): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-11 16:23:41 --> Class "App\Entities\ProductModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Product->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(17): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-11 16:23:58 --> Class "CodeIgniter\Models\ProductModel" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Product->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(17): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-11 16:25:02 --> Unknown column 'created_at' in 'field list'
+CRITICAL - 2022-04-11 16:25:02 --> Unknown column 'created_at' in 'field list'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\TFG-Shop\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\TFG-Shop\app\Entities\Product.php(22): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Product->insertData(Array)
+#9 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(17): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#10 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#11 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#12 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-04-11 16:25:46 --> Unknown column 'created_at' in 'field list'
+CRITICAL - 2022-04-11 16:25:46 --> Unknown column 'created_at' in 'field list'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\TFG-Shop\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\TFG-Shop\app\Entities\Product.php(22): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Product->insertData(Array)
+#9 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(17): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#10 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#11 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#12 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#14 {main}

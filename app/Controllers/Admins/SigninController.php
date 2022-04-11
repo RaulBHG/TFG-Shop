@@ -1,7 +1,9 @@
 <?php
 namespace App\Controllers\Admins;
 use CodeIgniter\Controller;
+
 use App\Models\AdminModel;
+use App\Entities\UserAdmin;
 
 class SigninController extends Controller{
 
@@ -18,17 +20,17 @@ class SigninController extends Controller{
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        $data = $adminModel->where('email', $email)->first();
+        $data = new UserAdmin($adminModel->where('email', $email)->first());
 
         if($data){            
 
-            $pass = $data['password'];
+            $pass = $data->password;
 
             $authenticatePassword = password_verify($password, $pass);
             if($authenticatePassword){
                 $ses_data = [
-                    'id' => $data['id'],
-                    'email' => $data['email'],                    
+                    'id' => $data->id,
+                    'email' => $data->email,                    
                     'isLoggedIn' => TRUE
                 ];
                 $session->set($ses_data);
