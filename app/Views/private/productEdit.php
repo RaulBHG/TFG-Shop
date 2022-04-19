@@ -46,85 +46,86 @@
         </section>
         <!-- Tabla donde se muestran los datos -->
         <section class="data">
-            <caption>Productos</caption>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Descripción</th>
-                        <th scope="col">Imagen principal</th>
-                        <th scope="col">Precio</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="(producto, index) in productos">
-                        <td>{{ producto.id }}</td>
-                        <td>
-                            <span v-if="formActualizar && idActualizar == index">
-                                <!-- Formulario para actualizar -->
-                                <input v-model="nameActualizar" type="text" class="form-control">
-                            </span>
-                            <span v-else>
-                                <!-- Dato name -->
-                                {{ producto.name }}
-                            </span>
-                        </td>
-                        <td>
-                            <span v-if="formActualizar && idActualizar == index">
-                                <!-- Formulario para actualizar -->
-                                <textarea v-model="descriptionActualizar" class="form-control" placeholder="Descripcion"></textArea>
-                            </span>
-                            <span v-else>
-                                <!-- Dato description -->
-                                {{ producto.description }}
-                            </span>
-                        </td>
-                        <td>
-                            <span v-if="formActualizar && idActualizar == index">
-                                <!-- Formulario para actualizar -->
-                                <!-- <input v-model="imagenActualizar" type="file" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)"
-                                placeholder="Images" multiple> -->
-                                <input type="file" @change="changeFiles" ref="imagenActualizar" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)" placeholder="Images" multiple>
-                            </span>
-                            <span v-else>
-                                <!-- Dato description -->
-                                <img v-bind:src="'<?= template_url() ?>img/img_products/' + producto.mainImg" alt="IMG PRODUCTO">                                
-                            </span>
-                        </td>
-                        <td>
-                            <span v-if="formActualizar && idActualizar == index">
-                                <!-- Formulario para actualizar -->
-                                <input v-model="priceActualizar" type="text" class="form-control">
-                            </span>
-                            <span v-else>
-                                <!-- Dato price -->
-                                {{ producto.price }}
-                            </span>
-                        </td>
-                        <td>
-                            <!-- Botón para guardar la información actualizada -->
-                            <span v-if="formActualizar && idActualizar == index">
-                                <button @click="guardarActualizacion(index)" class="btn btn-success">Guardar</button>
-                            </span>
-                            <span v-else>
-                                <!-- Botón para mostrar el formulario de actualizar -->
-                                <button @click="verFormActualizar(index)" class="btn btn-warning">Actualizar</button>
-                                <!-- Botón para borrar -->
-                                <button @click="borrarProducto(index)" class="btn btn-danger">Borrar</button>
-                            </span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <form id="formEdit">
+                <caption>Productos</caption>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Imagen principal</th>
+                            <th scope="col">Precio</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>                        
+                        <tr v-for="(producto, index) in productos">
+                            <td>{{ producto.id }}</td>
+                            <td>
+                                <span v-if="formActualizar && idActualizar == index">
+                                    <!-- Formulario para actualizar -->
+                                    <input v-model="nameActualizar" name="name" type="text" class="form-control">
+                                </span>
+                                <span v-else>
+                                    <!-- Dato name -->
+                                    {{ producto.name }}
+                                </span>
+                            </td>
+                            <td>
+                                <span v-if="formActualizar && idActualizar == index">
+                                    <!-- Formulario para actualizar -->
+                                    <textarea v-model="descriptionActualizar" name="description" class="form-control" placeholder="Descripcion"></textArea>
+                                </span>
+                                <span v-else>
+                                    <!-- Dato description -->
+                                    {{ producto.description }}
+                                </span>
+                            </td>
+                            <td>
+                                <span v-if="formActualizar && idActualizar == index">
+                                    <!-- Formulario para actualizar -->
+                                    <!-- <input v-model="imagenActualizar" type="file" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)"
+                                    placeholder="Images" multiple> -->
+                                    <input type="file" @change="changeFiles" name="imagenes" ref="imagenActualizar" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)" placeholder="Images" multiple>
+                                </span>
+                                <span v-else>
+                                    <!-- Dato description -->
+                                    <img v-bind:src="'<?= template_url() ?>img/img_products/' + producto.mainImg" alt="IMG PRODUCTO">                                
+                                </span>
+                            </td>
+                            <td>
+                                <span v-if="formActualizar && idActualizar == index">
+                                    <!-- Formulario para actualizar -->
+                                    <input v-model="priceActualizar" name="price" type="text" class="form-control">
+                                </span>
+                                <span v-else>
+                                    <!-- Dato price -->
+                                    {{ producto.price }}
+                                </span>
+                            </td>
+                            <td>
+                                <!-- Botón para guardar la información actualizada -->
+                                <span v-if="formActualizar && idActualizar == index">
+                                    <button @click="guardarActualizacion(index)" type="button" class="btn btn-success">Guardar</button>
+                                </span>
+                                <span v-else>
+                                    <!-- Botón para mostrar el formulario de actualizar -->
+                                    <button @click="verFormActualizar(index)" type="button" class="btn btn-warning">Actualizar</button>
+                                    <!-- Botón para borrar -->
+                                    <button @click="borrarProducto(index)" type="button" class="btn btn-danger">Borrar</button>
+                                </span>
+                            </td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </form> 
         </section>
     </div>
 
     <script>let baseUrl = "<?= base_url();?>"; </script>
     <script>
         $(document).ready(function(){
-            
             new Vue({
                 el: '#appProductos',
                 data: {
@@ -154,6 +155,7 @@
                     productos: [] 
                 },
                 methods: {
+                    // ------ CREAR PRODUCTO ------
                     crearProducto: function () {
                         let thisPro = this;
                         $.ajax({
@@ -161,10 +163,10 @@
                             url: baseUrl + "/adminPage/insertElement/product",
                             data: $("#formProduct").serialize() + "&main_img=01", // serializes the form's elements.
                             success: function (respuesta) {
-
+                                respuesta = JSON.parse(respuesta);
                                 // Anyadimos a nuestra lista
                                 thisPro.productos.push({
-                                    id: + new Date(),
+                                    id: + respuesta.id,
                                     name:           thisPro.name,
                                     description:    thisPro.description,
                                     mainImg:     "test.jpg",
@@ -180,6 +182,8 @@
                         });
                         
                     },
+
+                    // ------ VER ACTUALIZAR ------
                     verFormActualizar: function (producto_id) {
                         // Antes de mostrar el formulario de actualizar, rellenamos sus campos
                         this.idActualizar = producto_id;
@@ -189,32 +193,78 @@
                         // Mostramos el formulario
                         this.formActualizar = true;
                     },
+
+                    // ------ BORRAR PRODUCTO ------
                     borrarProducto: function (producto_id) {
                         // Borramos de la lista
-                        this.productos.splice(producto_id, 1);
+                        let thisPro = this;
+                        $.ajax({
+                            type: "POST",
+                            url: baseUrl + "/adminPage/removeElement/product/"+thisPro.productos[producto_id].id,
+                            success: function (respuesta) {
+                                thisPro.productos.splice(producto_id, 1);
+                            }
+                        });                        
                     },
+
+                    // ------ ACTUALIZAR PRODUCTO ------
                     guardarActualizacion: function (producto_id) {
                         // Ocultamos nuestro formulario de actualizar
-                        this.formActualizar = false;
-                        // Actualizamos los datos
-                        this.productos[producto_id].name = this.nameActualizar;
-                        this.productos[producto_id].description = this.descriptionActualizar;
-                        this.productos[producto_id].price = this.priceActualizar;
+
+                        let thisPro = this;
+                        $.ajax({
+                            type: "POST",
+                            url: baseUrl + "/adminPage/updateElement/product/"+thisPro.productos[producto_id].id,
+                            data: $("#formEdit").serialize() + "&main_img=01", // serializes the form's elements.
+                            success: function (respuesta) {
+                                // Actualizamos los datos
+                                thisPro.formActualizar = false;
+                                thisPro.productos[producto_id].name = thisPro.nameActualizar;
+                                thisPro.productos[producto_id].description = thisPro.descriptionActualizar;
+                                thisPro.productos[producto_id].price = thisPro.priceActualizar;
+                            }
+                        });  
+                        
                     },
+
+                    // ------ SELECT IMG ------
                     changeFiles:  function(){
                     //obtenemos los archivos
                     // se pueden asignar a un array u objeto
                         console.log(this.$refs.imagenes.files);
                         
                     },
+                    
+                    // ------ SELECT IMG ACTUALIZAR ------
                     changeFilesActualizar:  function(){
                     //obtenemos los archivos
                     // se pueden asignar a un array u objeto
                         console.log(this.$refs.imagenActualizar.files);
                         
                     }
-                }
+                },
+                beforeMount(){
+                    let thisPro = this;
+                    $.ajax({
+                        type: "POST",
+                        url: baseUrl + "/adminPage/getElements/product",
+                        success: function (respuesta) {
+                            respuesta = JSON.parse(respuesta);
+                            respuesta.forEach(element => {
+                                thisPro.productos.push({
+                                    id: + element.id,
+                                    name:           element.name,
+                                    description:    element.description,
+                                    mainImg:     "test.jpg",
+                                    price:          element.price
+                                });
+                            });
+
+                        }
+                    });
+                }                
             });
+            
         });
 
     </script>

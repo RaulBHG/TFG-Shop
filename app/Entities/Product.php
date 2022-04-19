@@ -14,12 +14,16 @@ class Product extends Entity{
         'price'         => null,
     ];
 
+    public function getData(){
+        $productModel = new Models\ProductModel();
+        return $listData = $productModel->findAll();
+    }
     public function insertData($data){
         $product = new Product($data);
         $productModel = new Models\ProductModel();   
         $productModel->insert($product);
 
-        return true;
+        return $productModel->getInsertID();
     }
     public function updateData($id, $data){
         $product = new Product($data);

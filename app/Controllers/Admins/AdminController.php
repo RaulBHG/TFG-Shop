@@ -21,17 +21,24 @@ class AdminController extends Controller{
         echo view("private/".$view);
     }
 
+    public function getElements($entity){
+        if ($this->request->isAJAX()) {
+
+            $entity = $this->entityReturn($entity);
+
+            $listElements = $entity->getData();
+
+            return json_encode($listElements);
+
+        }
+
+    }
+
     public function insertElement($entity){
         if ($this->request->isAJAX()) {
-            switch ($entity) {
-                case 'product':
-                    $entity = new Entities\Product();
-                    break;
-                
-                default:
-                    # code...
-                    break;
-            }
+            
+            $entity = $this->entityReturn($entity);
+
             $data = $this->request->getPost();
         
             // $data = [
@@ -41,8 +48,52 @@ class AdminController extends Controller{
             //     'price'=>12
             // ];
             // $this->db->table($table)->insert($data);
-            $entity->insertData($data);
+            $idNew = $entity->insertData($data);
+            $result = [
+                "code"  => "ok",
+                "id"    => $idNew
+            ];
+            return json_encode($result);
         }
+    }
+
+    public function updateElement($entity, $id){
+        if ($this->request->isAJAX()) {
+            
+            $entity = $this->entityReturn($entity);
+
+            $data = $this->request->getPost();
+        
+            $entity->updateData($id, $data);
+
+            return true;
+        }
+    }
+
+    public function removeElement($entity, $id){
+        if ($this->request->isAJAX()) {
+
+            $entity = $this->entityReturn($entity);
+
+            $removedElement = $entity->deleteData($id);
+
+            return true;
+
+        }
+
+    }
+
+    public function entityReturn($entity){
+        switch ($entity) {
+            case 'product':
+                $entity = new Entities\Product();
+                break;
+            
+            default:
+                # code...
+                break;
+        }
+        return $entity;
     }
 
 }
