@@ -33,11 +33,17 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+
+// ADMIN
+$routes->add('/adminPage', 'Admins\AdminController::index', ['filter' => 'authGuard']);
 $routes->add('/admin', 'Admins\SigninController::index');
+
+// ADMINEDITS
+$routes->add('/adminPage/productEdit', 'Admins\AdminController::loadView/productEdit', ['filter' => 'authGuard']);
+
+$routes->add('/adminPage/(:any)', 'Admins\AdminController::$1', ['filter' => 'authGuard']);
 $routes->post('/admin/(:any)', 'Admins\SigninController::$1');
 
-$routes->add('/adminPage', 'Admins\AdminController::index', ['filter' => 'authGuard']);
-$routes->add('/adminPage/(:any)', 'Admins\AdminController::$1', ['filter' => 'authGuard']);
 
 /*
  * --------------------------------------------------------------------

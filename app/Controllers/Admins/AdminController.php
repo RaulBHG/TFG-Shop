@@ -13,12 +13,15 @@ class AdminController extends Controller{
     //     $this->db = \Config\Database::connect();
     // }
     public function index(){
-        $session = session();
-        $this->insertElement(new Entities\Product());
         echo view("private/adminPage");
     }
 
-    public function insertElement($entity, $data = []){                
+    public function loadView($view){
+        helper('template'); 
+        echo view("private/".$view);
+    }
+
+    public function insertElement($entity, $data = []){
         $data = [
             'name'=>'raul',
             'description'=>'raul',
