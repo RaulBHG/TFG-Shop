@@ -27,17 +27,18 @@
     <div id="appProductos" class="container">
         <!-- Formulario para añadir productos -->
         <section class="form">
-            <form action="" class="text-center">
-                <input v-model="name" @keyup.enter="crearProducto" type="text" class="form-control" placeholder="Nombre">
+            <form id="formProduct" action="" class="text-center">
+                
+                <input v-model="name" name="name" @keyup.enter="crearProducto" type="text" class="form-control" placeholder="Nombre">                
 
-                <textarea v-model="description" class="form-control" placeholder="Descripcion"></textArea>
+                <textarea v-model="description" name="description" class="form-control" placeholder="Descripcion"></textArea>
 
                 <label>Imagenes de muestra (la primera será la portada)</label>
                 <!-- <input v-model="imagenes" type="file" v-on:change="changeFiles" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)"
                 placeholder="Images" ref="fileInput" multiple> -->
-                <input type="file" @change="changeFiles" class="form-control-file" ref="imagenes" multiple>
+                <input type="file" @change="changeFiles" name="imagenes" class="form-control-file" ref="imagenes" multiple>
 
-                <input v-model="price" @keyup.enter="crearProducto" type="number" class="form-control" placeholder="Precio">
+                <input v-model="price" @keyup.enter="crearProducto" name="price" type="number" class="form-control" placeholder="Precio">
 
                 <!-- Botón para añadir -->
                 <input @click="crearProducto" type="button" value="Añadir" class="btn btn-success">
@@ -120,6 +121,7 @@
         </section>
     </div>
 
+    <script>let baseUrl = "<?= base_url();?>"; </script>
     <script>
         $(document).ready(function(){
             
@@ -153,19 +155,30 @@
                 },
                 methods: {
                     crearProducto: function () {
-                        // Anyadimos a nuestra lista
-                        this.productos.push({
-                            id: + new Date(),
-                            name:           this.name,
-                            description:    this.description,
-                            mainImg:     "test.jpg",
-                            price:          this.price
+                        let thisPro = this;
+                        $.ajax({
+                            type: "POST",
+                            url: baseUrl + "/adminPage/insertElement/product",
+                            data: $("#formProduct").serialize() + "&main_img=01", // serializes the form's elements.
+                            success: function (respuesta) {
+
+                                // Anyadimos a nuestra lista
+                                thisPro.productos.push({
+                                    id: + new Date(),
+                                    name:           thisPro.name,
+                                    description:    thisPro.description,
+                                    mainImg:     "test.jpg",
+                                    price:          thisPro.price
+                                });
+                                // Vaciamos el formulario de añadir
+                                thisPro.name = '';
+                                thisPro.description = '';
+                                thisPro.imagenes = '';
+                                thisPro.price = '';
+
+                            }
                         });
-                        // Vaciamos el formulario de añadir
-                        this.name = '';
-                        this.description = '';
-                        this.imagenes = '';
-                        this.price = '';
+                        
                     },
                     verFormActualizar: function (producto_id) {
                         // Antes de mostrar el formulario de actualizar, rellenamos sus campos

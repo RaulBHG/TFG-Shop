@@ -13,6 +13,8 @@ class ProductModel extends Model{
 
     protected $returnType    = \App\Entities\Product::class;
     protected $useSoftDeletes = true;
+    protected $createdField  = 'created';
+    
 
     protected $allowedFields = ['name', 'description', 'main_img', 'price', 'deleted_at', 'modified', 'created'];
     

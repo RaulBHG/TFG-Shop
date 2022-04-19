@@ -29,3 +29,54 @@ CRITICAL - 2022-04-19 04:15:16 --> Call to undefined function template_url()
 #6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2022-04-19 06:21:54 --> Too few arguments to function App\Controllers\Admins\AdminController::insertElement(), 0 passed in C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php on line 832 and at least 1 expected
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-19 06:25:17 --> Undefined variable $variable
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(NULL)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-19 06:26:58 --> Class "App\Controllers\Admins\Product" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement('product')
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-04-19 06:42:47 --> Unknown column 'created' in 'field list'
+CRITICAL - 2022-04-19 06:42:47 --> Unknown column 'created' in 'field list'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\TFG-Shop\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\TFG-Shop\app\Entities\Product.php(23): CodeIgniter\Model->insert(Object(App\Entities\Product))
+#8 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(44): App\Entities\Product->insertData(Array)
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#10 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#11 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-04-19 06:43:26 --> Unknown column 'created' in 'field list'
+CRITICAL - 2022-04-19 06:43:26 --> Unknown column 'created' in 'field list'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\TFG-Shop\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\TFG-Shop\app\Entities\Product.php(23): CodeIgniter\Model->insert(Object(App\Entities\Product))
+#8 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(44): App\Entities\Product->insertData(Array)
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Product))
+#10 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#11 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#13 {main}

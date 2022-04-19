@@ -12,9 +12,6 @@ class Product extends Entity{
         'description'   => null,
         'main_img'      => null,
         'price'         => null,
-        'deleted_at'    => null,
-        'modified'      => null,
-        'created'       => null,
     ];
 
     public function insertData($data){
@@ -22,7 +19,18 @@ class Product extends Entity{
         $productModel = new Models\ProductModel();   
         $productModel->insert($product);
 
-        
+        return true;
+    }
+    public function updateData($id, $data){
+        $product = new Product($data);
+        $productModel = new Models\ProductModel();   
+        $productModel->update($id, $product);
+
+        return true;
+    }
+    public function deleteData($id){
+        $productModel = new Models\ProductModel();   
+        $productModel->delete($id);
 
         return true;
     }

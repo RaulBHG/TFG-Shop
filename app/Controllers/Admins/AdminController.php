@@ -21,15 +21,28 @@ class AdminController extends Controller{
         echo view("private/".$view);
     }
 
-    public function insertElement($entity, $data = []){
-        $data = [
-            'name'=>'raul',
-            'description'=>'raul',
-            'main_img'=>1,
-            'price'=>12
-        ];
-        // $this->db->table($table)->insert($data);
-        $entity->insertData($data);
+    public function insertElement($entity){
+        if ($this->request->isAJAX()) {
+            switch ($entity) {
+                case 'product':
+                    $entity = new Entities\Product();
+                    break;
+                
+                default:
+                    # code...
+                    break;
+            }
+            $data = $this->request->getPost();
+        
+            // $data = [
+            //     'name'=>'raul',
+            //     'description'=>'raul',
+            //     'main_img'=>01,
+            //     'price'=>12
+            // ];
+            // $this->db->table($table)->insert($data);
+            $entity->insertData($data);
+        }
     }
 
 }
