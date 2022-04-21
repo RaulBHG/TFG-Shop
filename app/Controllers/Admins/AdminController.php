@@ -40,7 +40,7 @@ class AdminController extends Controller{
             $entity = $this->entityReturn($entity);
 
             $data = $this->request->getPost();
-        
+
             // $data = [
             //     'name'=>'raul',
             //     'description'=>'raul',
@@ -48,10 +48,11 @@ class AdminController extends Controller{
             //     'price'=>12
             // ];
             // $this->db->table($table)->insert($data);
-            $idNew = $entity->insertData($data);
+            $data = $entity->insertData($data);
+            
             $result = [
                 "code"  => "ok",
-                "id"    => $idNew
+                "data"    => $data
             ];
             return json_encode($result);
         }

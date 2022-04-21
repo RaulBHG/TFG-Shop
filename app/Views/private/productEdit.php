@@ -36,7 +36,7 @@
                 <label>Imagenes de muestra (la primera será la portada)</label>
                 <!-- <input v-model="imagenes" type="file" v-on:change="changeFiles" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)"
                 placeholder="Images" ref="fileInput" multiple> -->
-                <input type="file" @change="changeFiles" name="imagenes" class="form-control-file" ref="imagenes" multiple>
+                <input type="file" @change="changeFiles" name="imagenes[]" class="form-control-file" ref="imagenes" multiple>
 
                 <input v-model="price" @keyup.enter="crearProducto" name="price" type="number" class="form-control" placeholder="Precio">
 
@@ -51,7 +51,6 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">id</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Descripción</th>
                             <th scope="col">Imagen principal</th>
@@ -61,7 +60,6 @@
                     </thead>
                     <tbody>                        
                         <tr v-for="(producto, index) in productos">
-                            <td>{{ producto.id }}</td>
                             <td>
                                 <span v-if="formActualizar && idActualizar == index">
                                     <!-- Formulario para actualizar -->
@@ -87,7 +85,7 @@
                                     <!-- Formulario para actualizar -->
                                     <!-- <input v-model="imagenActualizar" type="file" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)"
                                     placeholder="Images" multiple> -->
-                                    <input type="file" @change="changeFiles" name="imagenes" ref="imagenActualizar" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)" placeholder="Images" multiple>
+                                    <input type="file" @change="changeFiles" name="imagenes[]" ref="imagenActualizar" class="form-control-file" title="Imagenes de muestra (la primera será la portada)" placeholder="Images" multiple>
                                 </span>
                                 <span v-else>
                                     <!-- Dato description -->
@@ -158,18 +156,24 @@
                     // ------ CREAR PRODUCTO ------
                     crearProducto: function () {
                         let thisPro = this;
+                        var formData = new FormData($("#formProduct")[0]);
+                        formData.append("main_img", 01);
                         $.ajax({
                             type: "POST",
                             url: baseUrl + "/adminPage/insertElement/product",
-                            data: $("#formProduct").serialize() + "&main_img=01", // serializes the form's elements.
-                            success: function (respuesta) {
+                            // data: $("#formProduct").serialize() + "&main_img=01", // serializes the form's elements.
+                            data: formData, // serializes the form's elements.
+                            cache: false,
+                            contentType: false,
+                            processData: false,
+                            success: function (respuesta) {                            
                                 respuesta = JSON.parse(respuesta);
                                 // Anyadimos a nuestra lista
                                 thisPro.productos.push({
-                                    id: + respuesta.id,
+                                    id: + respuesta.data.prodId,
                                     name:           thisPro.name,
                                     description:    thisPro.description,
-                                    mainImg:     "test.jpg",
+                                    mainImg:        respuesta.data.firstImgName,
                                     price:          thisPro.price
                                 });
                                 // Vaciamos el formulario de añadir
@@ -210,12 +214,17 @@
                     // ------ ACTUALIZAR PRODUCTO ------
                     guardarActualizacion: function (producto_id) {
                         // Ocultamos nuestro formulario de actualizar
-
                         let thisPro = this;
+                        var formData = new FormData($("#formEdit")[0]);
+                        formData.append("main_img", 01);
                         $.ajax({
                             type: "POST",
                             url: baseUrl + "/adminPage/updateElement/product/"+thisPro.productos[producto_id].id,
-                            data: $("#formEdit").serialize() + "&main_img=01", // serializes the form's elements.
+                            // data: $("#formEdit").serialize() + "&main_img=01", // serializes the form's elements.
+                            data: formData, // serializes the form's elements.
+                            cache: false,
+                            contentType: false,
+                            processData: false,
                             success: function (respuesta) {
                                 // Actualizamos los datos
                                 thisPro.formActualizar = false;
@@ -248,14 +257,16 @@
                     $.ajax({
                         type: "POST",
                         url: baseUrl + "/adminPage/getElements/product",
-                        success: function (respuesta) {
+                        success: function (respuesta) {                                                       
+                            
                             respuesta = JSON.parse(respuesta);
+                            console.log(respuesta);
                             respuesta.forEach(element => {
                                 thisPro.productos.push({
-                                    id: + element.id,
+                                    id:           element.id,
                                     name:           element.name,
                                     description:    element.description,
-                                    mainImg:     "test.jpg",
+                                    mainImg:     element.main_img,
                                     price:          element.price
                                 });
                             });
@@ -264,6 +275,7 @@
                     });
                 }                
             });
+
             
         });
 
