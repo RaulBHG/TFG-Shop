@@ -11,8 +11,6 @@ class PimagesModel extends Model{
 
     protected $useAutoIncrement = true;
 
-    protected $returnType    = \App\Entities\Product::class;    
-
     protected $allowedFields = ['file_name'];
     
 

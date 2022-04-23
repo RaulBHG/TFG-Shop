@@ -35,6 +35,27 @@ class Product extends Entity{
         // return $listData = $productModel->findAll();        
         return $data;
     }
+    public function getDataById($id){
+        $db      = \Config\Database::connect();
+        $builder = $db->table('products');
+        $builder->select('*')->where("id", $id);
+        $builder->join('p_images', 'p_images.id_img = products.main_img');
+        $query = $builder->get();
+        $data = [];
+        foreach ($query->getResult() as $row) {
+            $dataNew = [
+                'id'=>$row->id,
+                'name'=>$row->name,
+                'description'=>$row->description,
+                'main_img'=>$row->file_name,
+                'price'=>$row->price
+            ];
+            
+            array_push($data, $dataNew);
+        }
+        // return $listData = $productModel->findAll();        
+        return $data;
+    }
     public function insertData($data){               
         $product = new Product($data);
         $productModel = new Models\ProductModel();   
@@ -117,8 +138,6 @@ class Product extends Entity{
                 }
             }
             $productModel->update($id, ['main_img'=>$firstImgId]);
-        }else{
-            echo "LLEGA";
         }
         
         

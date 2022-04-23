@@ -4,14 +4,14 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class EmailModel extends Model{
+class OprodModel extends Model{
     
-    protected $table      = 'email_clients';
+    protected $table      = 'orders_products';
     protected $primaryKey = 'id';
 
     protected $useAutoIncrement = true;
 
-    protected $allowedFields = ['email'];
+    protected $allowedFields = ['id_order', 'id_product', 'cant'];
     
 
 }

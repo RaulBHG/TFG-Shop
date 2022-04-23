@@ -39,8 +39,7 @@ class AdminController extends Controller{
             
             $entity = $this->entityReturn($entity);
 
-            $data = $this->request->getPost();
-
+            $data = $this->request->getPost();            
             // $data = [
             //     'name'=>'raul',
             //     'description'=>'raul',
@@ -88,6 +87,12 @@ class AdminController extends Controller{
         switch ($entity) {
             case 'product':
                 $entity = new Entities\Product();
+                break;
+            case 'contact':
+                $entity = new Entities\Contact();
+                break;
+            case 'order':
+                $entity = new Entities\Order();
                 break;
             
             default:

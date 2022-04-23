@@ -1,0 +1,314 @@
+ERROR - 2022-04-23 03:36:37 --> Column 'id_buy' cannot be null
+CRITICAL - 2022-04-23 03:36:37 --> Column 'id_buy' cannot be null
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\TFG-Shop\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\TFG-Shop\app\Entities\Contact.php(24): CodeIgniter\Model->insert(Object(App\Entities\Contact))
+#8 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(51): App\Entities\Contact->insertData(Array)
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Contact))
+#10 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#11 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-04-23 03:36:44 --> Column 'id_buy' cannot be null
+CRITICAL - 2022-04-23 03:36:44 --> Column 'id_buy' cannot be null
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\TFG-Shop\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\TFG-Shop\app\Entities\Contact.php(24): CodeIgniter\Model->insert(Object(App\Entities\Contact))
+#8 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(51): App\Entities\Contact->insertData(Array)
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Contact))
+#10 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#11 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-04-23 03:45:42 --> Undefined variable $result
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Contact.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(51): App\Entities\Contact->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Contact))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 03:47:00 --> Undefined variable $result
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Contact.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(51): App\Entities\Contact->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Contact))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 03:47:10 --> Undefined variable $result
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Contact.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Contact->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Contact))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 03:47:30 --> Undefined variable $result
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Contact.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Contact->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Contact))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 03:47:37 --> Undefined variable $contact
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Contact.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Contact->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Contact))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 03:48:00 --> Undefined variable $result
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Contact.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Contact->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Contact))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 06:01:13 --> Undefined property: stdClass::$description
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-23 06:10:39 --> Table 'shop.orders_product' doesn't exist
+CRITICAL - 2022-04-23 06:10:39 --> Table 'shop.orders_product' doesn't exist
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(36): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 06:11:16 --> Unknown column 'id_orders' in 'where clause'
+CRITICAL - 2022-04-23 06:11:16 --> Unknown column 'id_orders' in 'where clause'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(36): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 06:11:32 --> Unknown column 'id_orders' in 'where clause'
+CRITICAL - 2022-04-23 06:11:32 --> Unknown column 'id_orders' in 'where clause'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(36): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 06:11:38 --> Unknown column 'orders_products.deleted_at' in 'where clause'
+CRITICAL - 2022-04-23 06:11:38 --> Unknown column 'orders_products.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(36): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-23 06:15:47 --> Undefined constant "App\Controllers\Admins\id_product"
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 06:16:04 --> Attempt to read property "id_product" on array
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 38)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:21:20 --> Undefined array key "cant"
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:21:39 --> Undefined array key 1
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:21:44 --> Undefined array key "cant"
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:24:01 --> Undefined array key 2
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:25:48 --> Array to string conversion
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:27:49 --> syntax error, unexpected variable "$listProd"
+#0 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 06:31:35 --> Undefined constant "App\Controllers\Admins\cant"
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 06:39:19 --> syntax error, unexpected identifier "helper"
+#0 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 06:44:15 --> Call to undefined method App\Models\ProductModel::getDataById
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(41): CodeIgniter\Model->__call('getDataById', Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:44:46 --> Call to undefined method App\Models\ProductModel::getDataById
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(41): CodeIgniter\Model->__call('getDataById', Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:44:47 --> Call to undefined method App\Models\ProductModel::getDataById
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(41): CodeIgniter\Model->__call('getDataById', Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:45:07 --> Call to undefined method App\Models\ProductModel::getDataById
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(41): CodeIgniter\Model->__call('getDataById', Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:49:40 --> array_push(): Argument #1 ($array) must be of type array, null given
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(42): array_push(NULL, Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 06:55:22 --> Undefined constant "App\Controllers\Admins\oProductModel"
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 06:55:35 --> Undefined variable $emailEntitie
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-23 06:57:23 --> Unknown column 'id_order' in 'where clause'
+CRITICAL - 2022-04-23 06:57:23 --> Unknown column 'id_order' in 'where clause'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 06:58:41 --> Unknown column 'orders_emails.deleted_at' in 'where clause'
+CRITICAL - 2022-04-23 06:58:41 --> Unknown column 'orders_emails.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-23 07:00:35 --> Undefined variable $emailEntitie
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 07:01:06 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 07:02:53 --> Undefined variable $emailEntitie
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('productEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
