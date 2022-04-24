@@ -432,3 +432,13 @@ CRITICAL - 2022-04-24 09:41:34 --> Undefined variable $contact
 #4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2022-04-24 11:31:13 --> Call to undefined function template_url()
+#0 C:\xampp\htdocs\TFG-Shop\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\TFG-Shop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('private/adminPa...', Array, true)
+#3 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(16): view('private/adminPa...')
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->index()
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}

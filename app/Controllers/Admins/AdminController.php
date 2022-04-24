@@ -13,6 +13,7 @@ class AdminController extends Controller{
     //     $this->db = \Config\Database::connect();
     // }
     public function index(){
+        helper('template'); 
         echo view("private/adminPage");
     }
 
