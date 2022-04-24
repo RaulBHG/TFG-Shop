@@ -94,6 +94,9 @@ class AdminController extends Controller{
             case 'order':
                 $entity = new Entities\Order();
                 break;
+            case 'blog':
+                $entity = new Entities\Blog();
+                break;
             
             default:
                 # code...

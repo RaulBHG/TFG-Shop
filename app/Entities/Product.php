@@ -18,7 +18,9 @@ class Product extends Entity{
         $db      = \Config\Database::connect();
         $builder = $db->table('products');
         $builder->select('*');
-        $builder->join('p_images', 'p_images.id_img = products.main_img');
+        $builder->join('p_images', 'p_images.id_img = products.main_img', 'left');
+        $builder->where('deleted_at', NULL);
+        $builder->orderBy('created', 'desc');
         $query = $builder->get();
         $data = [];
         foreach ($query->getResult() as $row) {
@@ -39,7 +41,7 @@ class Product extends Entity{
         $db      = \Config\Database::connect();
         $builder = $db->table('products');
         $builder->select('*')->where("id", $id);
-        $builder->join('p_images', 'p_images.id_img = products.main_img');
+        $builder->join('p_images', 'p_images.id_img = products.main_img', 'left');
         $query = $builder->get();
         $data = [];
         foreach ($query->getResult() as $row) {

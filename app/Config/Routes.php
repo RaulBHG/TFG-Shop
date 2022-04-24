@@ -42,6 +42,7 @@ $routes->add('/admin', 'Admins\SigninController::index');
 $routes->add('/adminPage/productEdit', 'Admins\AdminController::loadView/productEdit', ['filter' => 'authGuard']);
 $routes->add('/adminPage/contactEdit', 'Admins\AdminController::loadView/contactEdit', ['filter' => 'authGuard']);
 $routes->add('/adminPage/orderEdit', 'Admins\AdminController::loadView/orderEdit', ['filter' => 'authGuard']);
+$routes->add('/adminPage/blogEdit', 'Admins\AdminController::loadView/blogEdit', ['filter' => 'authGuard']);
 
 $routes->add('/adminPage/(:any)', 'Admins\AdminController::$1', ['filter' => 'authGuard']);
 $routes->post('/admin/(:any)', 'Admins\SigninController::$1');

@@ -24,51 +24,53 @@
     }
 </style>
 <body>
-    <h1>Edit Products</h1>
-    <div id="appProductos" class="container">
-        <!-- Formulario para añadir productos -->
+    <h1>Edit Artículos</h1>
+    <div id="appBlog" class="container">
+        <!-- Formulario para añadir articulos -->
         <section class="form">
-            <form id="formProduct" action="" class="text-center">
+            <form id="formBlog" action="" class="text-center">
                 
-                <input v-model="name" name="name" @keyup.enter="crearProducto" type="text" class="form-control" placeholder="Nombre">                
+                <input v-model="title" name="title" @keyup.enter="crearArticulo" type="text" class="form-control" placeholder="Título">                
 
                 <textarea v-model="description" name="description" class="form-control" placeholder="Descripcion"></textArea>
 
-                <label>Imagenes de muestra (la primera será la portada)</label>
-                <!-- <input v-model="imagenes" type="file" v-on:change="changeFiles" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)"
-                placeholder="Images" ref="fileInput" multiple> -->
-                <input type="file" @change="changeFiles" name="imagenes[]" class="form-control-file" ref="imagenes" multiple>
+                <label>Imágenes del artículo. La primera estará encima, la segunda a la derecha y la última abajo.</label>
 
-                <input v-model="price" @keyup.enter="crearProducto" name="price" type="number" class="form-control" placeholder="Precio">
+                <input type="file" @change="changeFiles" name="img1" class="form-control-file" ref="imagenes">
+                
+                <input type="file" @change="changeFiles" name="img2" class="form-control-file" ref="imagenes">
+
+                <input type="file" @change="changeFiles" name="img3" class="form-control-file" ref="imagenes">
 
                 <!-- Botón para añadir -->
-                <input @click="crearProducto" type="button" value="Añadir" class="btn btn-success">
+                <input @click="crearArticulo" type="button" value="Añadir" class="btn btn-success">
             </form>
         </section>
         <!-- Tabla donde se muestran los datos -->
         <section class="data">
             <form id="formEdit">
-                <caption>Productos</caption>
+                <caption>Artículos</caption>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">Nombre</th>
+                            <th scope="col">Title</th>
                             <th scope="col">Descripción</th>
-                            <th scope="col">Imagen principal</th>
-                            <th scope="col">Precio</th>
+                            <th scope="col">Imagen 1</th>
+                            <th scope="col">Imagen 2</th>
+                            <th scope="col">Imagen 3</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>                        
-                        <tr v-for="(producto, index) in productos">
+                        <tr v-for="(articulo, index) in articulos">
                             <td>
                                 <span v-if="formActualizar && idActualizar == index">
                                     <!-- Formulario para actualizar -->
-                                    <input v-model="nameActualizar" name="name" type="text" class="form-control">
+                                    <input v-model="titleActualizar" name="title" type="text" class="form-control">
                                 </span>
                                 <span v-else>
                                     <!-- Dato name -->
-                                    {{ producto.name }}
+                                    {{ articulo.title }}
                                 </span>
                             </td>
                             <td>
@@ -78,7 +80,7 @@
                                 </span>
                                 <span v-else>
                                     <!-- Dato description -->
-                                    {{ producto.description }}
+                                    {{ articulo.description }}
                                 </span>
                             </td>
                             <td>
@@ -86,21 +88,35 @@
                                     <!-- Formulario para actualizar -->
                                     <!-- <input v-model="imagenActualizar" type="file" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)"
                                     placeholder="Images" multiple> -->
-                                    <input type="file" @change="changeFiles" name="imagenes[]" ref="imagenActualizar" class="form-control-file" title="Imagenes de muestra (la primera será la portada)" placeholder="Images" multiple>
+                                    <input type="file" @change="changeFiles" name="img1" ref="imagenActualizar" class="form-control-file" title="Imagenes de muestra (la primera será la portada)" placeholder="Images">
                                 </span>
                                 <span v-else>
                                     <!-- Dato description -->
-                                    <img v-bind:src="'<?= template_url() ?>img/img_products/' + producto.mainImg" alt="IMG PRODUCTO">                                
+                                    <img v-bind:src="'<?= template_url() ?>img/img_blog/' + articulo.img1" alt="NO SELECCIONADA">                                
                                 </span>
                             </td>
                             <td>
                                 <span v-if="formActualizar && idActualizar == index">
                                     <!-- Formulario para actualizar -->
-                                    <input v-model="priceActualizar" name="price" type="text" class="form-control">
+                                    <!-- <input v-model="imagenActualizar" type="file" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)"
+                                    placeholder="Images" multiple> -->
+                                    <input type="file" @change="changeFiles" name="img2" ref="imagenActualizar" class="form-control-file" title="Imagenes de muestra (la primera será la portada)" placeholder="Images">
                                 </span>
                                 <span v-else>
-                                    <!-- Dato price -->
-                                    {{ producto.price }}
+                                    <!-- Dato description -->
+                                    <img v-bind:src="'<?= template_url() ?>img/img_blog/' + articulo.img2" alt="NO SELECCIONADA">                                
+                                </span>
+                            </td>                            
+                            <td>
+                                <span v-if="formActualizar && idActualizar == index">
+                                    <!-- Formulario para actualizar -->
+                                    <!-- <input v-model="imagenActualizar" type="file" class="form-control-file" name="imagenes[]" title="Imagenes de muestra (la primera será la portada)"
+                                    placeholder="Images" multiple> -->
+                                    <input type="file" @change="changeFiles" name="img3" ref="imagenActualizar" class="form-control-file" title="Imagenes de muestra (la primera será la portada)" placeholder="Images">
+                                </span>
+                                <span v-else>
+                                    <!-- Dato description -->
+                                    <img v-bind:src="'<?= template_url() ?>img/img_blog/' + articulo.img3" alt="NO SELECCIONADA">                                
                                 </span>
                             </td>
                             <td>
@@ -126,62 +142,63 @@
     <script>
         $(document).ready(function(){
             new Vue({
-                el: '#appProductos',
+                el: '#appBlog',
                 data: {
-                    // Input nombre
-                    name: '',
+                    // Input titulo
+                    title: '',
                     // Input description
                     description: '',
-                    // Input description
-                    mainImg: '',
-                    // Input description
-                    imagenes: '',
-                    // Input price
-                    price: '',
+                    // Input img1
+                    img1: '',
+                    // Input img2
+                    img2: '',
+                    // Input img3
+                    img3: '',
                     // Ver o no ver el formulario de actualizar
                     formActualizar: false,
                     // La posición de tu lista donde te gustaría actualizar 
                     idActualizar: -1,
-                    // Input nombre dentro del formulario de actualizar
-                    nameActualizar: '',
+                    // Input titulo dentro del formulario de actualizar
+                    titleActualizar: '',
                     // Input description dentro del formulario de actualizar
                     descriptionActualizar: '',
-                    // Input description dentro del formulario de actualizar
-                    imagenActualizar: '',
-                    // Input price dentro del formulario de actualizar
-                    priceActualizar: '',
-                    // Lista de productos
-                    productos: [] 
+                    // Input img1 dentro del formulario de actualizar
+                    img1Actualizar: '',
+                    // Input img2 dentro del formulario de actualizar
+                    img2Actualizar: '',
+                    // Input img3 dentro del formulario de actualizar
+                    img3Actualizar: '',
+                    // Lista de articulos
+                    articulos: [] 
                 },
                 methods: {
                     // ------ CREAR PRODUCTO ------
-                    crearProducto: function () {
+                    crearArticulo: function () {
                         let thisPro = this;
-                        var formData = new FormData($("#formProduct")[0]);
-                        formData.append("main_img", 01);
+                        var formData = new FormData($("#formBlog")[0]);                        
                         $.ajax({
                             type: "POST",
-                            url: baseUrl + "/adminPage/insertElement/product",
-                            // data: $("#formProduct").serialize() + "&main_img=01", // serializes the form's elements.
+                            url: baseUrl + "/adminPage/insertElement/blog",
                             data: formData, // serializes the form's elements.
                             cache: false,
                             contentType: false,
                             processData: false,
                             success: function (respuesta) {                            
                                 respuesta = JSON.parse(respuesta);
+                                console.log(respuesta);
                                 // Anyadimos a nuestra lista
-                                thisPro.productos.push({
+                                thisPro.articulos.push({
                                     id:             respuesta.data.prodId,
-                                    name:           thisPro.name,
+                                    title:          thisPro.title,
                                     description:    thisPro.description,
-                                    mainImg:        respuesta.data.firstImgName,
-                                    price:          thisPro.price
+                                    img1:           respuesta.data.img1Name,
+                                    img2:           respuesta.data.img2Name,
+                                    img3:           respuesta.data.img3Name
                                 });
                                 // Vaciamos el formulario de añadir
-                                thisPro.name = '';
+                                thisPro.title = '';
                                 thisPro.description = '';
-                                thisPro.imagenes = '';
-                                thisPro.price = '';
+                                thisPro.imagenes = '';                                
 
                             }
                         });
@@ -189,38 +206,37 @@
                     },
 
                     // ------ VER ACTUALIZAR ------
-                    verFormActualizar: function (producto_id) {
+                    verFormActualizar: function (articulo_id) {
                         // Antes de mostrar el formulario de actualizar, rellenamos sus campos
-                        this.idActualizar = producto_id;
-                        this.nameActualizar = this.productos[producto_id].name;
-                        this.descriptionActualizar = this.productos[producto_id].description;
-                        this.priceActualizar = this.productos[producto_id].price;
+                        this.idActualizar = articulo_id;
+                        this.titleActualizar = this.articulos[articulo_id].title;
+                        this.descriptionActualizar = this.articulos[articulo_id].description;                        
                         // Mostramos el formulario
                         this.formActualizar = true;
                     },
 
                     // ------ BORRAR PRODUCTO ------
-                    borrarProducto: function (producto_id) {
+                    borrarProducto: function (articulo_id) {
                         // Borramos de la lista
                         let thisPro = this;
                         $.ajax({
                             type: "POST",
-                            url: baseUrl + "/adminPage/removeElement/product/"+thisPro.productos[producto_id].id,
+                            url: baseUrl + "/adminPage/removeElement/blog/"+thisPro.articulos[articulo_id].id,
                             success: function (respuesta) {
-                                thisPro.productos.splice(producto_id, 1);
+                                thisPro.articulos.splice(articulo_id, 1);
                             }
                         });                        
                     },
 
                     // ------ ACTUALIZAR PRODUCTO ------
-                    guardarActualizacion: function (producto_id) {
+                    guardarActualizacion: function (articulo_id) {
                         // Ocultamos nuestro formulario de actualizar
                         let thisPro = this;
                         var formData = new FormData($("#formEdit")[0]);
                         formData.append("main_img", 01);
                         $.ajax({
                             type: "POST",
-                            url: baseUrl + "/adminPage/updateElement/product/"+thisPro.productos[producto_id].id,
+                            url: baseUrl + "/adminPage/updateElement/blog/"+thisPro.articulos[articulo_id].id,
                             // data: $("#formEdit").serialize() + "&main_img=01", // serializes the form's elements.
                             data: formData, // serializes the form's elements.
                             cache: false,
@@ -229,9 +245,9 @@
                             success: function (respuesta) {
                                 // Actualizamos los datos
                                 thisPro.formActualizar = false;
-                                thisPro.productos[producto_id].name = thisPro.nameActualizar;
-                                thisPro.productos[producto_id].description = thisPro.descriptionActualizar;
-                                thisPro.productos[producto_id].price = thisPro.priceActualizar;
+                                thisPro.articulos[articulo_id].title = thisPro.titleActualizar;
+                                thisPro.articulos[articulo_id].description = thisPro.descriptionActualizar;
+                                thisPro.articulos[articulo_id].price = thisPro.priceActualizar;
                             }
                         });  
                         
@@ -257,18 +273,19 @@
                     let thisPro = this;
                     $.ajax({
                         type: "POST",
-                        url: baseUrl + "/adminPage/getElements/product",
+                        url: baseUrl + "/adminPage/getElements/blog",
                         success: function (respuesta) {                                                       
                             
                             respuesta = JSON.parse(respuesta);
                             console.log(respuesta);
                             respuesta.forEach(element => {
-                                thisPro.productos.push({
-                                    id:           element.id,
-                                    name:           element.name,
+                                thisPro.articulos.push({
+                                    id:             element.id,
+                                    title:          element.title,
                                     description:    element.description,
-                                    mainImg:     element.main_img,
-                                    price:          element.price
+                                    img1:           element.img1,                                    
+                                    img2:           element.img2,                                    
+                                    img3:           element.img3,                                    
                                 });
                             });
 

@@ -1,0 +1,434 @@
+CRITICAL - 2022-04-24 04:27:54 --> Invalid file: private/orderEdit.php
+#0 C:\xampp\htdocs\TFG-Shop\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('private/orderEd...')
+#1 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('private/orderEd...', Array, true)
+#2 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(21): view('private/orderEd...')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('orderEdit')
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-24 04:42:16 --> Invalid file: private/orderEdit.php
+#0 C:\xampp\htdocs\TFG-Shop\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('private/orderEd...')
+#1 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('private/orderEd...', Array, true)
+#2 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(21): view('private/orderEd...')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('orderEdit')
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-24 04:42:43 --> Invalid file: private/orderEdit.php
+#0 C:\xampp\htdocs\TFG-Shop\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('private/orderEd...')
+#1 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('private/orderEd...', Array, true)
+#2 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(21): view('private/orderEd...')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('orderEdit')
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-24 04:42:45 --> Invalid file: private/orderEdit.php
+#0 C:\xampp\htdocs\TFG-Shop\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('private/orderEd...')
+#1 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('private/orderEd...', Array, true)
+#2 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(21): view('private/orderEd...')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('orderEdit')
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-24 04:43:52 --> Invalid file: private/orderEdit.php
+#0 C:\xampp\htdocs\TFG-Shop\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('private/orderEd...')
+#1 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('private/orderEd...', Array, true)
+#2 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(21): view('private/orderEd...')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('orderEdit')
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-24 04:44:34 --> Class "App\Entities\Entities\Product" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Order->getData()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 04:46:00 --> Class "App\Entities\Entities\Product" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Order->getData()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 04:46:39 --> Class "App\Entities\Entities\Product" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Order->getData()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 04:46:50 --> Class "App\Entities\Entities\Product" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Order->getData()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 04:47:23 --> Class "App\Entities\Entities\Product" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(71): App\Entities\Order->getData()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 04:47:46 --> Class "App\Entities\Entities\Product" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Order->getData()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 05:46:41 --> There is no data to update.
+#0 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\TFG-Shop\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(77): CodeIgniter\Model->update('1', Object(App\Entities\Contact))
+#3 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(67): App\Entities\Order->updateData('1', Array)
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->updateElement(Object(App\Entities\Order), '1')
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 05:47:41 --> There is no data to update.
+#0 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\TFG-Shop\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(77): CodeIgniter\Model->update('1', Object(App\Entities\Contact))
+#3 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(67): App\Entities\Order->updateData('1', Array)
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->updateElement(Object(App\Entities\Order), '1')
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 06:28:46 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 06:29:01 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 06:30:44 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 06:31:07 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 06:31:34 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(29): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 06:32:01 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('orderEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 06:32:34 --> Undefined variable $prodInfo
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('orderEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 06:32:43 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('orderEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 06:33:05 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('orderEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 06:33:24 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->loadView('orderEdit')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 06:33:52 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(80): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 06:34:56 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(80): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 06:35:49 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(82): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 06:37:22 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(35): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 06:37:40 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(38): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 06:38:13 --> Undefined array key 0
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Order.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(38): App\Entities\Order->getData()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->getElements(Object(App\Entities\Order))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 08:59:17 --> Column 'sender' cannot be null
+CRITICAL - 2022-04-24 08:59:17 --> Column 'sender' cannot be null
+#0 C:\xampp\htdocs\TFG-Shop\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\TFG-Shop\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\TFG-Shop\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\TFG-Shop\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\TFG-Shop\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(25): CodeIgniter\Model->insert(Object(App\Entities\Contact))
+#8 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#10 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#11 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-04-24 09:06:20 --> Undefined variable $request
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:06:42 --> Undefined variable $request
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:06:57 --> Undefined variable $request
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:07:30 --> Undefined variable $request
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:07:41 --> Undefined variable $request
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:09:44 --> Attempt to assign property "img1" on null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 09:10:08 --> Attempt to assign property "img1" on null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 09:12:08 --> Attempt to assign property "img1" on null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 09:12:39 --> Undefined variable $img3Name
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 35)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:13:27 --> Undefined variable $img3Name
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 34)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:15:21 --> Undefined variable $img3Name
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 35)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:19:57 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\TFG-Shop\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(38): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs...', '1650809997_7a00...')
+#2 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-24 09:21:35 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\TFG-Shop\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(38): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs...', '1650810095_fd08...')
+#2 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-24 09:22:26 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\TFG-Shop\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(44): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs...', '1650810146_94d4...')
+#2 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-24 09:24:52 --> Call to a member function hasFile() on array
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 09:25:36 --> Call to a member function hasFile() on array
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 09:26:06 --> Call to a member function hasFile() on array
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 09:28:22 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 09:28:46 --> Call to a member function getFile() on array
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 09:31:46 --> Undefined variable $img1Name
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:31:59 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\TFG-Shop\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(44): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs...', '1650810719_0aba...')
+#2 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-24 09:32:19 --> Undefined variable $img2Name
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(50): App\Entities\Blog->insertData(Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->insertElement(Object(App\Entities\Blog))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:40:58 --> Undefined variable $contact
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 71)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(67): App\Entities\Blog->updateData('7', Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->updateElement(Object(App\Entities\Blog), '7')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-24 09:41:34 --> Undefined variable $contact
+#0 C:\xampp\htdocs\TFG-Shop\app\Entities\Blog.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 71)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\Admins\AdminController.php(67): App\Entities\Blog->updateData('8', Array)
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Admins\AdminController->updateElement(Object(App\Entities\Blog), '8')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admins\AdminController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}

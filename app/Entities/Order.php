@@ -4,6 +4,7 @@ namespace App\Entities;
 
 use CodeIgniter\Entity\Entity;
 use App\Models;
+use App\Entities;
 
 class Order extends Entity{
     
@@ -14,17 +15,22 @@ class Order extends Entity{
         'address'       => null,
         'phone'         => null,
         'price'         => null,
-        'product_list'  => null,
+        'products'      => null,
+        'cant'          => null,
         'email'         => null
     ];
 
-    public function getData(){
+    public function getData(){        
         $db      = \Config\Database::connect();
         $builder = $db->table('orders');
         $builder->select('*');
+        $builder->where('deleted_at', NULL);
+        $builder->orderBy('created', 'desc');
         $query = $builder->get();
-        $data = [];
+        $data = []; 
+             
         foreach ($query->getResult() as $row) {
+              
             $dataNew = [
                 'id'=>$row->id,
                 'locate_id'=>$row->locate_id,
@@ -34,20 +40,20 @@ class Order extends Entity{
                 'phone'=>$row->phone,
                 'price'=>$row->price,
                 'products'=>[],
-                'cant'=>0,
                 'email'=>""               
             ];
             
             // GETTING PRODUCT INFO
             $productEntitie = new Entities\Product();
-            $oProductModel = new Models\OprodModel();
+            $oProductModel = new Models\OprodModel();            
             $listProd = json_decode(json_encode($oProductModel->where('id_order', $row->id)->findAll()), TRUE);
-            foreach ($listProd as $ele) {                
-                $prodInfo = json_decode(json_encode($productEntitie->getDataById($ele["id_product"])), TRUE);
-                $dataNew["cant"] = $ele["cant"];                
+
+            foreach ($listProd as $ele) {                  
+                // $prodInfo = json_decode(json_encode($productEntitie->getDataById($ele["id_product"])), TRUE)[0];
+                $prodInfo = $productEntitie->getDataById($ele["id_product"])[0];
+                $prodInfo["cant"] = $ele["cant"];                
                 array_push($dataNew["products"], $prodInfo);
             }
-
             // GETTING EMAIL
             $oEmailModel = new Models\OemailModel();
             $emailModel = new Models\EmailModel();
@@ -62,26 +68,17 @@ class Order extends Entity{
 
         return $data;
     }
-    public function insertData($data){                       
-        $contact = new Contact($data);
-        $contactModel = new Models\ContactModel();   
-        $contactModel->insert($contact);
-
-        $idNewContact = $contactModel->getInsertID();        
-
-        return $idNewContact;
-    }
     public function updateData($id, $data){
-        $contact = new Contact($data);
-        $contactModel = new Models\ContactModel();
-        $contactModel->update($id, $contact);    
-        
-
+        $order = new Order($data);
+        $orderModel = new Models\OrderModel();
+        $orderModel->update($id, $order);    
+    
         return true;
     }
     public function deleteData($id){
-        $contactModel = new Models\ContactModel();   
-        $contactModel->delete($id);
+        
+        $orderModel = new Models\OrderModel();   
+        $orderModel->delete($id);
 
         return true;
     }

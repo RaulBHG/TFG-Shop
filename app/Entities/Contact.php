@@ -16,7 +16,7 @@ class Contact extends Entity{
 
     public function getData(){
         $contactModel = new Models\ContactModel();
-        return $contactModel->findAll();
+        return $contactModel->orderBy('created', 'desc')->findAll();
     }
     public function insertData($data){                       
         $contact = new Contact($data);

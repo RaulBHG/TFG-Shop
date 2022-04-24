@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="<?= template_url() ?>vendor/bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
     <script src="<?= template_url() ?>vendor/vue.js"></script>  
-    <script src="<?= template_url() ?>vendor/jquery/jquery.min.js"></script>  
+    <script src="<?= template_url() ?>vendor/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="<?= template_url() ?>css/appearAnimation.css">  
 </head>
 <style>
     h1{
@@ -158,11 +159,11 @@
                                 respuesta = JSON.parse(respuesta);
                                 // Anyadimos a nuestra lista
                                 thisCon.contactos.push({
-                                    id: + respuesta.data.contId,
+                                    id:             respuesta.data.contId,
                                     sender:         thisCon.sender,
                                     phone:          thisCon.phone,
                                     message:        thisCon.message,
-                                    id_buy:        thisCon.id_buy
+                                    id_buy:         thisCon.id_buy
                                 });
                                 // Vaciamos el formulario de añadir
                                 thisCon.sender = '';
