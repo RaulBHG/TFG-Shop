@@ -246,8 +246,7 @@
                                 // Actualizamos los datos
                                 thisCon.formActualizar = false;
 
-                                let estadoAct = getEstado(thisCon.estado);                                
-                                
+                                let estadoAct = getEstado(thisCon.estadoActualizar);                                
                                 thisCon.pedidos[pedido_id].estado = estadoAct;
                             }
                         });  
@@ -289,18 +288,18 @@
             });
 
             function getEstado(estadoNum) {
-                let estadoAct
+                let estadoAct;
                 switch (estadoNum){
-                    case 0:
+                    case "0":
                         estadoAct = "Solicitado";
                         break;
-                    case 1:
+                    case "1":
                         estadoAct = "Enviado";
                         break;
-                    case 2:
+                    case "2":
                         estadoAct = "Completado";
                         break;
-                    case 3:
+                    case "3":
                         estadoAct = "Cancelado";
                         break;
                 
