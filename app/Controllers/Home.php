@@ -13,7 +13,8 @@ class Home extends BaseController
         return view('index');
     }
 
-    public function loadView($view, $element = 0){
+    public function loadView($view, $element = 0){        
+
         helper('template'); 
 
         $data = [];

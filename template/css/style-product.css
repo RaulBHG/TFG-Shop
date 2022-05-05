@@ -19,6 +19,7 @@
     box-shadow: 0 0 24px #00000052;
     overflow: hidden;
     margin-top: 3rem;
+    position: relative;
 }
 .productSection .productContainer img{
     object-fit: cover;
@@ -35,6 +36,51 @@
     font-size: 40px;
     margin-bottom: 1rem;
     text-align: left;
+}
+.productSection .productContainer .inputCant{
+    border: 2px solid var(--text-color);
+    border-radius: 6px;
+    width: 8rem;
+}
+
+.productSection .productContainer .inputCant.incorrect{
+    border: 2px solid red;
+}
+.productSection .addToCardContainer{
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+.productSection .buyProduct{
+    position: relative;
+    border: 0;
+    box-shadow: 0 0 5px #00000061;
+    background-color: #90d58f;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 0.2em 0.8em;
+    cursor: pointer;
+}
+.productSection .productContainer .addToCardContainer .inputCant.incorrect + .buyProduct::after{
+    content: "Seleccione una cantidad inferior a 51";
+    position: absolute;
+    top: -2.5rem;
+    width: 27rem;
+    left: -13rem;
+    font-size: 17px;
+    color: red;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /* ------------- FIN PRODUCTS SECTION ------------- */

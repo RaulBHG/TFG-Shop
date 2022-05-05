@@ -1,0 +1,48 @@
+CRITICAL - 2022-05-05 15:04:36 --> Undefined variable $data
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\CestController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\CestController->addToCest()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CestController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-05 15:11:16 --> Undefined constant "App\Controllers\result"
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\CestController->addToCest()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CestController))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-05 15:22:11 --> Undefined variable $result
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\CestController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\CestController->addToCest()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CestController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-05 15:22:33 --> Undefined variable $cesta
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\CestController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\CestController->addToCest()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CestController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-05 15:23:10 --> Undefined variable $cesta
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->loadView('product', '90')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-05 15:23:38 --> Undefined variable $cesta
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->loadView('product', '90')
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-05 15:24:48 --> Undefined variable $cesta
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\CestController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\CestController->addToCest()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CestController))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}

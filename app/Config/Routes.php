@@ -49,6 +49,9 @@ $routes->add('/adminPage/blogEdit', 'Admins\AdminController::loadView/blogEdit',
 $routes->add('/adminPage/(:any)', 'Admins\AdminController::$1', ['filter' => 'authGuard']);
 $routes->post('/admin/(:any)', 'Admins\SigninController::$1');
 
+// CEST CONTROLLER
+$routes->post('/cestController/(:any)', 'CestController::$1');
+
 
 /*
  * --------------------------------------------------------------------

@@ -44,6 +44,11 @@
                     <div class="infoProd">
                         <h2><?= $product["name"] ?></h2>
                         <p><?= $product["description"] ?></p>
+                        
+                        <div class="addToCardContainer">                        
+                            <input type="number" class="inputCant" min="0" max="50" placeholder="Cantidad" value="1" oninput="this.value = Math.abs(this.value)">
+                            <button class="buyProduct" productToBuy="<?= $product["id"] ?>">ADD TO CARD</button>
+                        </div>
                     </div>                    
                 </div>
             </div>
@@ -71,8 +76,9 @@
 
     <script>let baseUrl = "<?= base_url();?>"; </script>
     <!-- Bootstrap core JavaScript -->
-    <script src="<?= template_url() ?>/vendor/jquery/jquery.min.js"></script>
-    <script src="<?= template_url() ?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= template_url() ?>vendor/jquery/jquery.min.js"></script>
+    <script src="<?= template_url() ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= template_url() ?>js/products.js"></script>
     
 </body>
 </html>
