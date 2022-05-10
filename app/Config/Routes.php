@@ -51,6 +51,7 @@ $routes->post('/admin/(:any)', 'Admins\SigninController::$1');
 
 // CEST CONTROLLER
 $routes->post('/cestController/(:any)', 'CestController::$1');
+$routes->add('/cest', 'CestController::index');
 
 
 /*

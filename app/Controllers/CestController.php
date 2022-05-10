@@ -4,11 +4,26 @@ use CodeIgniter\Controller;
 
 use App\Models\AdminModel;
 use App\Entities\UserAdmin;
+use App\Entities\Product;
 
 class CestController extends Controller{
 
     public function index(){
-
+        helper("template");
+        $session = session();   
+        $cesta = $session->get('cest');
+        $products = [];
+        foreach ($cesta as $prod) {
+            $entity = new Product();
+            $product = $entity->getDataById($prod["productId"])[0];
+            $product["priceTotal"] = $product["price"]*$prod["cantProd"];
+            $product["cant"] = $prod["cantProd"];
+            array_push($products, $product);
+        }        
+        $data = [
+            "products" => $products
+        ];
+        return view('cest', $data);
     }
 
     public function addToCest(){
@@ -47,7 +62,6 @@ class CestController extends Controller{
                 }
             }
             $session->set("cest", $cesta);
-            print_r ($session->get('cest'));            
             
         }else{
             $result = [
@@ -57,6 +71,62 @@ class CestController extends Controller{
         
         return json_encode($result);
         }
+    }
+
+    public function updateCant(){
+        if ($this->request->isAJAX()) {
+
+        $productId = $this->request->getPost("idProd");
+        $cantProd = $this->request->getPost("cantProd");
+
+        if($cantProd > 0 && $cantProd < 50){
+            $result = [
+                "result" => "ok"
+            ];
+            $session = session();
+        
+            $productSession = [
+                'productId' => $productId,
+                'cantProd' => $cantProd,                    
+            ];
+
+            $cesta = session()->get('cest');
+            foreach ($cesta as $key => $producto) {
+                if($productId == $producto["productId"]){
+                    $existeProd = true;
+                    $cesta[$key]["cantProd"] = $cantProd;
+                    if($cesta[$key]["cantProd"] > 50 || $cesta[$key]["cantProd"] < 0){
+                        $result["result"] = "nok";
+                        return json_encode($result);
+                    }
+                }
+            }
+
+            $session->set("cest", $cesta);
+            
+        }else{
+            $result = [
+                "result" => "nok"
+            ];
+        }
+        
+        return json_encode($result);
+        }
+    }
+
+    public function removeFromCest(){
+        $productId = $this->request->getPost("idProd");
+        $session = session();
+        $cesta = session()->get('cest');
+        foreach ($cesta as $key => $producto) {
+            if($cesta[$key]["productId"] == $productId)
+            unset($cesta[$key]);
+        }
+        $session->set("cest", $cesta);
+        $result = [
+            "result" => "ok"
+        ];
+        return json_encode($result);
     }
 
 
