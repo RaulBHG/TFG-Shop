@@ -53,6 +53,10 @@ $routes->post('/admin/(:any)', 'Admins\SigninController::$1');
 $routes->post('/cestController/(:any)', 'CestController::$1');
 $routes->add('/cest', 'CestController::index');
 
+// STRIPE CONTROLLER
+$routes->get("pay", "PayController::stripe");
+$routes->post("payment", "PayController::payment");
+
 
 /*
  * --------------------------------------------------------------------
