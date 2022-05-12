@@ -18,7 +18,8 @@ class Home extends BaseController
         helper('template'); 
 
         $data = [];
-
+        echo "LLEGA";
+        die();
         // SHOP
         switch ($view) {
             case 'shop':
