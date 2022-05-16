@@ -11,7 +11,6 @@ class OrderModel extends Model{
 
     protected $useAutoIncrement = true;
 
-    protected $returnType    = \App\Entities\Order::class;
     protected $useSoftDeletes = true;
     protected $createdField  = 'created';
     

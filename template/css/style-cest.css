@@ -124,3 +124,29 @@ input[type=number] {
 }
 
 /* ------------- FIN CESTA SECTION ------------- */
+
+/* ------------- PAY SECTION ------------- */
+
+.paySection{
+    height: 0;
+    overflow: hidden;
+    transition: .4s;
+    -o-transition: .4s;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+}
+.paySection.show{
+    height: 20rem;
+    /* min-height: fit-content;
+    overflow: inherit; */
+}
+.paySection .falseComplet{
+    color: red;
+}
+.successCompra{
+    text-align: center;
+    margin-top: 2rem;
+    color: #00d000;
+}
+
+/* ------------- FIN PAY SECTION ------------- */

@@ -74,17 +74,42 @@
             }
         ?>
         </div>
+
+        <div class="paySection">
+            <div class="container">        
+                <form id="formLocate">
+                    <label>Nombre*</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="name" required>
+                    </div>
+                    <label>Dirección*</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="address" placeholder="address" required>
+                    </div>
+                    <label>Teléfono</label>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" name="phone" placeholder="phone">
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <div class="total">
             <div class="container">            
                 <div class="row">
                     <div>
                         <p class="totalPrice"><b>TOTAL:</b> <span class="numPrice"><?= $totalPrices ?></span>€</p>
-                        <button class="payButton">Pagar</button>
+                        <button class="payButton">CONTINUAR</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <input type="hidden" name="locateId" class="locateId">
+
+
     </section>
+
 
     
     <footer>
@@ -104,6 +129,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://checkout.stripe.com/checkout.js"></script>    
 
     <script>let baseUrl = "<?= base_url();?>"; </script>
     <!-- Bootstrap core JavaScript -->

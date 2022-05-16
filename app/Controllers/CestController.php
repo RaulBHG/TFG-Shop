@@ -5,6 +5,7 @@ use CodeIgniter\Controller;
 use App\Models\AdminModel;
 use App\Entities\UserAdmin;
 use App\Entities\Product;
+use App\Models;
 
 class CestController extends Controller{
 
@@ -127,6 +128,46 @@ class CestController extends Controller{
             "result" => "ok"
         ];
         return json_encode($result);
+    }
+
+    public function addOrder(){
+        $order = new Models\OrderModel();
+        $orderProducts = new Models\OprodModel();
+        $orderEmail = new Models\OemailModel();
+        $priceTotal = 0;
+        $session = session();   
+        $cesta = $session->get('cest');
+        $products = [];
+        foreach ($cesta as $prod) {
+            $entity = new Product();
+            $product = $entity->getDataById($prod["productId"])[0];
+            $priceTotal += $product["price"]*$prod["cantProd"];
+        }
+        $locateId = rand();
+        $data = [
+            'locate_id'   => $locateId,
+            'estado'      => 0,
+            'name'        => $this->request->getPost('name'),
+            'address'     => $this->request->getPost('address'),
+            'phone'       => $this->request->getPost('phone'),
+            'price'       => $priceTotal,
+        ];
+
+        $order->insert($data);
+
+        foreach ($cesta as $prod) {
+            $data = [
+                'id_order'    => $order->getInsertID(),
+                'id_product'  => $prod["productId"],
+                'cant'        => $prod["cantProd"]
+            ];
+            $orderProducts->insert($data);
+        }
+        $result = [
+            "locateId"  => $locateId            
+        ];
+        
+        echo($locateId);
     }
 
 

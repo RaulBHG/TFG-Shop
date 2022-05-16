@@ -54,4 +54,69 @@ $(document).ready(function(){
         });        
     }
 
+    $(".payButton").on("click", function(){
+        let btn = $(this);
+        $(".paySection").addClass("show");
+        btn.html("PAGAR");        
+        window.setTimeout(function(){
+            btn.addClass("payStripe");
+        },200);        
+    });
+
+    $(document).on("click", ".payStripe", function(){
+        $(".falseComplet").hide();
+        $("#formLocate input:required").each(function(){
+            if($(this).val() == ""){
+                $(this).after("<p class='falseComplet'>Este campo es obligatorio.</p>");
+                return false;
+            }
+        });
+        $.ajax({
+            type: "POST",
+            url: baseUrl + "/cestController/addOrder",
+            data: $("#formLocate").serialize(),
+            success: function (respuesta) {
+                $("input.locateId").val(respuesta);
+                pay($(".numPrice").html(), respuesta);
+            }
+        });        
+
+    });
+
+ 
+    function pay(amount, locateId) {
+        var handler = StripeCheckout.configure({
+        key: 'pk_test_51Kyf0aLIP7gnkeacpG7gFDGURthcoFrHmuzdmSUAPSMAjJboUjNXm6hawyWWmJheEc3F2fKPrMXOStV4aY3uOQ6A00m0DuMLnH', // your publisher key id
+        locale: 'auto',
+        token: function (token) {
+            // You can access the token ID with `token.id`.
+            // Get the token ID to your server-side code for use.
+            console.log('Token Created!!');
+            console.log(token)
+            $('#token_response').html(JSON.stringify(token));
+    
+            $.ajax({
+                url:baseUrl+"/payment",
+                method: 'post',
+                data: { tokenId: token.id, amount: amount * 100, locateId: locateId },
+                dataType: "json",
+                success: function( response ) {
+                    console.log(response.data);
+                    
+                    $(".paySection").fadeOut();
+                    $(".total").empty();
+                    $(".total").html("<h3 class='successCompra'>Compra finalizada. ID DE LOCALIZACIÓN DEL PEDIDO: "+$("input.locateId").val()+"</h3>");
+                }
+            })
+        }
+        });
+    
+        handler.open({
+            name: 'Pagar',
+            description: 'Rellene los datos para pagar',
+            amount: amount * 100,
+            currency: 'eur'
+        });
+    }
+
 });
