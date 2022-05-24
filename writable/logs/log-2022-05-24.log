@@ -1,0 +1,104 @@
+CRITICAL - 2022-05-24 12:19:46 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(21): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:20:39 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(21): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:21:28 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(21): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:23:49 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(21): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:26:38 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(23): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:27:45 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(23): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:27:56 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(22): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:28:13 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(22): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:28:25 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(22): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:28:32 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(22): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:28:45 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(22): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:29:35 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(22): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-24 12:29:48 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(22): App\Controllers\PayController->addOrder()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}

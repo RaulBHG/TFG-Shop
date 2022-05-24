@@ -16,22 +16,34 @@ class PayController extends Controller{
     }
 
     public function payment(){
-        Stripe\Stripe::setApiKey(STRIPE_SECRET);
-
-        $this->addOrder();             
-
-        $stripe = Stripe\Charge::create ([
-                "amount" => $this->request->getVar('amount'),
-                "currency" => "eur",
-                "source" => $this->request->getVar('tokenId'),
-                "description" => "Test payment from tutsmake.com." 
-        ]);
-        
+        if ($this->request->isAJAX()) {
+            Stripe\Stripe::setApiKey(STRIPE_SECRET);
             
-       // after successfull payment, you can store payment related information into your database
-             
-        $data = array('success' => true, 'data'=> $stripe);
-        echo json_encode($data);
+            $this->addOrder();  
+
+            $priceTotal = 0;
+            $session = session();   
+            $cesta = $session->get('cest');
+            $products = [];
+            foreach ($cesta as $prod) {
+                $entity = new Product();
+                $product = $entity->getDataById($prod["productId"])[0];
+                $priceTotal += $product["price"]*$prod["cantProd"];
+            }
+
+            $stripe = Stripe\Charge::create ([
+                    "amount" => $priceTotal,
+                    "currency" => "eur",
+                    "source" => $this->request->getVar('tokenId'),
+                    "description" => "Test payment from tutsmake.com." 
+            ]);
+            
+                
+        // after successfull payment, you can store payment related information into your database
+                
+            $data = array('success' => true, 'data'=> $stripe);
+            echo json_encode($data);
+        }
     }
     
     public function addOrder(){        
@@ -39,15 +51,16 @@ class PayController extends Controller{
         $emailClients = new Models\EmailModel();
         $orderEmail = new Models\OemailModel();        
 
-        // EMAIL
+        // EMAIL        
         Stripe\Stripe::setApiKey(STRIPE_SECRET);
         $stripeinfo = Stripe\Token::retrieve($this->request->getVar('tokenId'));
         $email = $stripeinfo->email;
+
         $emailExist = $emailClients->where("email", $email)->first();
-
-        $locateId = $this->request->getPost('locateId');
+        
+        $locateId = $this->request->getPost('locateId');        
         $orderId = $order->where("locate_id", $locateId)->first()["id"];
-
+        
         if(!$emailExist){
             $emailClients->insert(["email" => $email]);
             $data = [

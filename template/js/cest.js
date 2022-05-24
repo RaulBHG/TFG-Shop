@@ -76,8 +76,9 @@ $(document).ready(function(){
             url: baseUrl + "/cestController/addOrder",
             data: $("#formLocate").serialize(),
             success: function (respuesta) {
-                $("input.locateId").val(respuesta);
-                pay($(".numPrice").html(), respuesta);
+                let result = JSON.parse(respuesta);
+                $("input.locateId").val(result["locateId"]);
+                pay(result["price"], result["locateId"]);
             }
         });        
 

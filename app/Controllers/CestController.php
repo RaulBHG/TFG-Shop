@@ -28,7 +28,7 @@ class CestController extends Controller{
     }
 
     public function addToCest(){
-        if ($this->request->isAJAX()) {
+        if($this->request->isAJAX()) {
 
         $productId = $this->request->getPost("idProd");
         $cantProd = $this->request->getPost("cantProd");
@@ -164,10 +164,11 @@ class CestController extends Controller{
             $orderProducts->insert($data);
         }
         $result = [
-            "locateId"  => $locateId            
+            "locateId"  => $locateId,
+            "price"     => $priceTotal      
         ];
         
-        echo($locateId);
+        return json_encode($result);
     }
 
 
