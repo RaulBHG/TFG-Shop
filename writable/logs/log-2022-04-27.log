@@ -1,0 +1,19 @@
+CRITICAL - 2022-04-27 13:27:11 --> Call to undefined function template_url()
+#0 C:\xampp\htdocs\TFG-Shop\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\TFG-Shop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#3 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(9): view('index')
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-27 13:27:34 --> syntax error, unexpected token "return"
+#0 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}

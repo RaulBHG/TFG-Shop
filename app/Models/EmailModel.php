@@ -11,9 +11,6 @@ class EmailModel extends Model{
 
     protected $useAutoIncrement = true;
 
-    protected $returnType    = \App\Entities\Email::class;
-    protected $useSoftDeletes = true;
-
     protected $allowedFields = ['email'];
     
 

@@ -1,0 +1,56 @@
+CRITICAL - 2022-05-03 15:34:14 --> Class "App\Controllers\Entities\Product" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->loadView('shop')
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-03 15:35:42 --> Undefined variable $data
+#0 C:\xampp\htdocs\TFG-Shop\app\Views\shop.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\TFG-Shop\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\TFG-Shop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('shop', Array, true)
+#4 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(31): view('shop', Array)
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->loadView('shop')
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-03 15:41:14 --> Undefined array key "main_img"
+#0 C:\xampp\htdocs\TFG-Shop\app\Views\shop.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\TFG-Shop\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\TFG-Shop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('shop', Array, true)
+#4 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(31): view('shop', Array)
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->loadView('shop')
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-03 15:41:35 --> Undefined array key "main_img"
+#0 C:\xampp\htdocs\TFG-Shop\app\Views\shop.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\TFG-Shop\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\TFG-Shop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('shop', Array, true)
+#4 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(31): view('shop', Array)
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->loadView('shop')
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-03 16:28:06 --> Too few arguments to function App\Controllers\Home::loadView(), 1 passed in C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php on line 832 and exactly 2 expected
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->loadView('shop')
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-03 16:33:16 --> Undefined array key "name"
+#0 C:\xampp\htdocs\TFG-Shop\app\Views\product.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\TFG-Shop\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\TFG-Shop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\TFG-Shop\system\Common.php(1089): CodeIgniter\View\View->render('product', Array, true)
+#4 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(43): view('product', Array)
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->loadView('product', '91')
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}

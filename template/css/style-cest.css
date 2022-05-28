@@ -1,0 +1,152 @@
+
+/* ------------- CESTA SECTION ------------- */
+
+.cestaSection{
+    padding-top: 5rem;
+    min-height: 93.6vh;
+    padding-bottom: 1rem;
+    background-color: #ffffff;
+}
+.cestaSection h1{
+    margin: 2rem 0;
+}
+.cestaSection p{
+margin: 0;
+}
+.cestaSection > .container > .row .rowProduct, .cestaSection > .container > .row .headRows{
+    width: 100%;
+}
+.cestaSection .headRows{
+    display: flex;
+}
+.cestaSection .headRows p{
+    width: 20%;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+}
+.cestaSection .headRows p:hover{
+    text-decoration: underline;
+}
+.cestaSection .rowProduct{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 9rem;
+    margin: 1rem 0;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color .3s, transform .8s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -o-transition: background-color .3s, transform .8s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -moz-transition: background-color .3s, transform .8s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-transition: background-color .3s, transform .8s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.cestaSection .rowProduct:hover{
+    background-color: #d3d3d3;
+}
+.cestaSection .rowProduct .imgCont{
+    width: 20%;
+    height: 100%;
+}
+.cestaSection .rowProduct .imgCont img{
+    height: 9rem;
+    width: 9rem;
+    object-fit: cover;
+}
+.cestaSection .rowProduct .infoProd{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.cestaSection .rowProduct .nameProd{
+    width: 25%;
+    font-size: 30px;
+}
+.cestaSection .rowProduct .priceProd{
+    font-size: 32px;
+    color: #09d009;
+    font-weight: 500;
+    width: 25%;
+}
+
+.cestaSection .rowProduct .inputCant{
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+    width: 8rem;
+    height: 3rem;
+    font-size: 24px;
+}
+
+.cestaSection .rowProduct .removeFrom{
+    font-size: 30px;
+    right: 2rem;
+    position: absolute;
+    color: #cf7979;
+    cursor: pointer;
+}
+
+.cestaSection .rowProduct.remove{
+    background-color: #d7aeae;    
+    transform: translateX(-100%) scale(.5);
+}
+.cestaSection > .container{
+    overflow: hidden;
+}
+
+.cestaSection .total .totalPrice{
+    font-size: 24px;
+}
+.cestaSection .total .payButton{
+    position: relative;
+    border: 0;
+    box-shadow: 0 0 5px #00000061;
+    background-color: #90d58f;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 0.2em 0.8em;
+    cursor: pointer;
+    font-size: 21px;
+    margin-top: 1rem;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* ------------- FIN CESTA SECTION ------------- */
+
+/* ------------- PAY SECTION ------------- */
+
+.paySection{
+    height: 0;
+    overflow: hidden;
+    transition: .4s;
+    -o-transition: .4s;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+}
+.paySection.show{
+    height: 20rem;
+    /* min-height: fit-content;
+    overflow: inherit; */
+}
+.paySection .falseComplet{
+    color: red;
+}
+.successCompra{
+    text-align: center;
+    margin-top: 2rem;
+    color: #00d000;
+}
+
+/* ------------- FIN PAY SECTION ------------- */

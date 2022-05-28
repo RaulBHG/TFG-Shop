@@ -13,6 +13,7 @@ class AdminController extends Controller{
     //     $this->db = \Config\Database::connect();
     // }
     public function index(){
+        helper('template'); 
         echo view("private/adminPage");
     }
 
@@ -39,8 +40,7 @@ class AdminController extends Controller{
             
             $entity = $this->entityReturn($entity);
 
-            $data = $this->request->getPost();
-        
+            $data = $this->request->getPost();            
             // $data = [
             //     'name'=>'raul',
             //     'description'=>'raul',
@@ -48,10 +48,11 @@ class AdminController extends Controller{
             //     'price'=>12
             // ];
             // $this->db->table($table)->insert($data);
-            $idNew = $entity->insertData($data);
+            $data = $entity->insertData($data);
+            
             $result = [
                 "code"  => "ok",
-                "id"    => $idNew
+                "data"    => $data
             ];
             return json_encode($result);
         }
@@ -87,6 +88,15 @@ class AdminController extends Controller{
         switch ($entity) {
             case 'product':
                 $entity = new Entities\Product();
+                break;
+            case 'contact':
+                $entity = new Entities\Contact();
+                break;
+            case 'order':
+                $entity = new Entities\Order();
+                break;
+            case 'blog':
+                $entity = new Entities\Blog();
                 break;
             
             default:

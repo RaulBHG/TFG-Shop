@@ -1,0 +1,19 @@
+body > *{
+    opacity: 0;
+    -webkit-animation: appear .5s forwards;
+    animation: appear .5s forwards;    
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body{
+    background-color: #cfdbe6!important;
+}
+.trumbowyg-editor{
+    background-color: white;
+}

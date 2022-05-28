@@ -32,7 +32,8 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-
+$routes->get('/shop', 'Home::loadView/shop');
+$routes->get('/product/(:any)', 'Home::loadView/product/$1');
 
 // ADMIN
 $routes->add('/adminPage', 'Admins\AdminController::index', ['filter' => 'authGuard']);
@@ -40,9 +41,26 @@ $routes->add('/admin', 'Admins\SigninController::index');
 
 // ADMINEDITS
 $routes->add('/adminPage/productEdit', 'Admins\AdminController::loadView/productEdit', ['filter' => 'authGuard']);
+$routes->add('/adminPage/contactEdit', 'Admins\AdminController::loadView/contactEdit', ['filter' => 'authGuard']);
+$routes->add('/adminPage/orderEdit', 'Admins\AdminController::loadView/orderEdit', ['filter' => 'authGuard']);
+$routes->add('/adminPage/blogEdit', 'Admins\AdminController::loadView/blogEdit', ['filter' => 'authGuard']);
 
 $routes->add('/adminPage/(:any)', 'Admins\AdminController::$1', ['filter' => 'authGuard']);
 $routes->post('/admin/(:any)', 'Admins\SigninController::$1');
+
+// CEST CONTROLLER
+$routes->post('/cestController/(:any)', 'CestController::$1');
+$routes->add('/cest', 'CestController::index');
+
+// STRIPE CONTROLLER
+$routes->get("pay", "PayController::stripe");
+$routes->post("payment", "PayController::payment");
+
+// CONTACT CONTROLLER
+$routes->post('/contactController/(:any)', 'ContactController::$1');
+$routes->get('/contact', 'ContactController::index');
+
+
 
 
 /*

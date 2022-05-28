@@ -25,6 +25,13 @@ defined('APP_NAMESPACE') || define('APP_NAMESPACE', 'App');
  */
 defined('COMPOSER_PATH') || define('COMPOSER_PATH', ROOTPATH . 'vendor/autoload.php');
 
+// STRIPE
+
+defined("STRIPE_KEY") || define('STRIPE_KEY', "pk_test_51Kyf0aLIP7gnkeacpG7gFDGURthcoFrHmuzdmSUAPSMAjJboUjNXm6hawyWWmJheEc3F2fKPrMXOStV4aY3uOQ6A00m0DuMLnH");
+defined("STRIPE_SECRET") || define('STRIPE_SECRET', "sk_test_51Kyf0aLIP7gnkeac7mxzXyHaa5WGCU9nIyrjTbZDqKgOxkpxHigVxppxt6LNg6AF0LfQRUdn5PmoS9vkr5uyC0qR00VVh5wKXd");
+
+// END STRIPE
+
 /*
  |--------------------------------------------------------------------------
  | Timing Constants

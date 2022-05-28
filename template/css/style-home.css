@@ -1,0 +1,195 @@
+
+/* ------------- BANNER CENTRAL ------------- */
+
+.banner-central {
+    height: 600px;
+    padding-top: 80px;
+    background-color: #f9f2e5;
+    background-image: url(../img/portada.png);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-central .container,
+.banner-central .row {
+    height: 100%;
+}
+
+.banner-central .firstInfo {
+    height: 300px;
+    background-color: red;
+    width: 300px;
+}
+
+.banner-central .mainForm {
+    height: 300px;
+    background-color: blue;
+    width: 300px;
+}
+
+/* ------------- FIN BANNER CENTRAL ------------- */
+
+
+/* ------------- SECTION CARDS ------------- */
+
+.cardsSection {
+    padding: 2rem 0;
+}
+
+.cardsSection .card {
+    margin: auto;
+    width: 300px;
+    height: 267px;
+    background-color: green;
+    margin-bottom: 1rem;
+}
+
+.cardsSection .cardsMobile {
+    display: none;
+}
+.cardsSection .carouselPoints{
+    display: none;
+}
+
+/* ------------- FIN SECTION CARDS ------------- */
+
+
+
+/* ------------- SECTION CARDS ------------- */
+
+.ventajasSection {
+    padding: 2rem 0;
+    background-color: aquamarine;
+}
+
+.cardVentajas {
+    margin: auto;
+    width: 150px;
+}
+
+.cardVentajas img {
+    height: 60px;
+    margin: auto;
+    margin-bottom: 0.7rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.cardVentajas h3 {
+    width: fit-content;
+    margin: auto;
+}
+
+.cardVentajas p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ------------- FIN SECTION CARDS ------------- */
+
+
+
+/* ------------- FAQS ------------- */
+
+.preguntas_frecuentes {
+    padding: 4rem 0;
+    padding-bottom: 0;
+}
+
+.preguntas_frecuentes h2 {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.preguntas_frecuentes .btn.collapsed {
+    border-radius: 0;
+    margin-bottom: -21px;
+}
+
+.offset {
+    border-bottom: 2px solid #5652eb;
+    border-radius: 0 !important;
+    cursor: pointer;
+}
+
+.preguntas_frecuentes .offset {
+    background-color: transparent;
+    margin: 1%;
+    border-radius: 25px;
+    display: inline-block;
+    width: 98%;
+    position: relative;
+    min-height: 66px;
+    color: white;
+}
+
+.preguntas_frecuentes .btn.collapsed:hover {
+    color: gray;
+}
+
+.preguntas_frecuentes .btn {
+    border-radius: 0;
+    color: gray !important;
+}
+
+.preguntas_frecuentes .respuesta {
+    border: 0;
+}
+
+.preguntas_frecuentes {
+    margin-top: 0;
+}
+
+
+.title {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 15px;
+}
+
+.title h1 {
+    font-weight: bold;
+}
+
+.title h3 {
+    font-size: 22px;
+}
+
+.preguntas_frecuentes .pregunta .p3 {
+    font-size: 21px;
+    margin-left: 10px;
+    color: white;
+}
+
+.preguntas_frecuentes .pregunta:hover {
+    text-decoration: none !important;
+}
+
+.preguntas_frecuentes .offset::after {
+    content: "\27A4";
+    position: absolute;
+    right: 1rem;
+    top: 14px;
+    font-size: 20px;
+    transform: rotate(90deg);
+    transition: .5s;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+.preguntas_frecuentes .offset[aria-expanded="true"]::after {
+    transform: rotate(-90deg);
+}
+
+.containerColorFaqs {
+    background-color: brown;
+    padding: 2rem 0;
+}
+
+/* ------------- FIN FAQS ------------- */
