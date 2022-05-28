@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '8e26c313950356a38947bffc84307c082910d2fd',
+        'reference' => 'ddbadec8b3b5cbfa8edb1095b8434f51d5d18b9b',
         'name' => 'codeigniter4/codeigniter4',
         'dev' => true,
     ),
@@ -25,7 +25,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '8e26c313950356a38947bffc84307c082910d2fd',
+            'reference' => 'ddbadec8b3b5cbfa8edb1095b8434f51d5d18b9b',
             'dev_requirement' => false,
         ),
         'composer/pcre' => array(
@@ -216,6 +216,15 @@
             'aliases' => array(),
             'reference' => '77a32518733312af16a44300404e945338981de3',
             'dev_requirement' => true,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.6.0',
+            'version' => '6.6.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'reference' => 'e43bac82edc26ca04b36143a48bde1c051cfd5b1',
+            'dev_requirement' => false,
         ),
         'phpspec/prophecy' => array(
             'pretty_version' => 'v1.15.0',

@@ -102,3 +102,223 @@ CRITICAL - 2022-05-24 12:29:48 --> Trying to access array offset on value of typ
 #4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2022-05-24 12:58:56 --> Non-static method App\Libraries\Phpmailer_lib::sendMail() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:00:21 --> Class "App\Libraries\Phpmailer_lib" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:00:33 --> Class "App\Libraries\Phpmailer_lib" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:00:43 --> Class "App\Controllers\Phpmailer_lib" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:02:16 --> Class "App\Controllers\ResourceController" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-24 13:02:21 --> Class "App\Controllers\Phpmailer_lib" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:02:51 --> Non-static method App\Libraries\libMailer::sendMail() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:04:09 --> Non-static method App\Libraries\libMailer::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:04:10 --> Non-static method App\Libraries\libMailer::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:04:10 --> Non-static method App\Libraries\libMailer::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:04:10 --> Non-static method App\Libraries\libMailer::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:04:11 --> Non-static method App\Libraries\libMailer::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:05:16 --> Non-static method App\Libraries\libMail::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:05:17 --> Non-static method App\Libraries\libMail::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:05:17 --> Non-static method App\Libraries\libMail::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:05:18 --> Non-static method App\Libraries\libMail::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:05:18 --> Non-static method App\Libraries\libMail::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:05:18 --> Non-static method App\Libraries\libMail::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:05:46 --> Class "App\Controllers\Controller" not found
+#0 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\TFG-Shop\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-24 13:05:50 --> Non-static method App\Libraries\libMail::checkToken() cannot be called statically
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:07:21 --> Call to undefined method App\Libraries\libMail::checkToken()
+#0 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-24 13:07:46 --> require(..vendor/autoload.php): Failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\TFG-Shop\app\Libraries\libMail.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(..vendo...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\TFG-Shop\app\Libraries\libMail.php(9): require()
+#2 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(14): App\Libraries\libMail::sendMail()
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-24 13:09:00 --> Class "PHPMailer\PHPMailer" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(14): App\Libraries\libMail::sendMail()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-24 13:09:20 --> Class "PHPMailer" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(14): App\Libraries\libMail::sendMail()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-24 13:10:21 --> Class "PHPMailer" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(14): App\Libraries\libMail::sendMail()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-24 13:10:22 --> Class "PHPMailer" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(14): App\Libraries\libMail::sendMail()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-24 13:10:22 --> Class "PHPMailer" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(14): App\Libraries\libMail::sendMail()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-24 13:10:23 --> Class "PHPMailer" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(14): App\Libraries\libMail::sendMail()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-24 13:10:23 --> Class "PHPMailer" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(14): App\Libraries\libMail::sendMail()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-24 13:10:23 --> Class "PHPMailer" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(14): App\Libraries\libMail::sendMail()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-24 13:10:38 --> Class "PHPMailer" not found
+#0 C:\xampp\htdocs\TFG-Shop\app\Controllers\Home.php(14): App\Libraries\libMail::sendMail()
+#1 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-24 16:54:13 --> Amount must be no more than €999,999.99
+#0 C:\xampp\htdocs\TFG-Shop\vendor\stripe\stripe-php\lib\Exception\InvalidRequestException.php(35): Stripe\Exception\ApiErrorException::factory('Amount must be ...', 400, '{\n  "error": {\n...', Array, Object(Stripe\Util\CaseInsensitiveArray), 'amount_too_larg...')
+#1 C:\xampp\htdocs\TFG-Shop\vendor\stripe\stripe-php\lib\ApiRequestor.php(213): Stripe\Exception\InvalidRequestException::factory('Amount must be ...', 400, '{\n  "error": {\n...', Array, Object(Stripe\Util\CaseInsensitiveArray), 'amount_too_larg...', 'amount')
+#2 C:\xampp\htdocs\TFG-Shop\vendor\stripe\stripe-php\lib\ApiRequestor.php(175): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#3 C:\xampp\htdocs\TFG-Shop\vendor\stripe\stripe-php\lib\ApiRequestor.php(560): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#4 C:\xampp\htdocs\TFG-Shop\vendor\stripe\stripe-php\lib\ApiRequestor.php(124): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#5 C:\xampp\htdocs\TFG-Shop\vendor\stripe\stripe-php\lib\ApiOperations\Request.php(78): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#6 C:\xampp\htdocs\TFG-Shop\vendor\stripe\stripe-php\lib\ApiOperations\Create.php(25): Stripe\ApiResource::_staticRequest('post', '/v1/charges', Array, NULL)
+#7 C:\xampp\htdocs\TFG-Shop\app\Controllers\PayController.php(40): Stripe\Charge::create(Array)
+#8 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(832): App\Controllers\PayController->payment()
+#9 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayController))
+#10 C:\xampp\htdocs\TFG-Shop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\TFG-Shop\index.php(36): CodeIgniter\CodeIgniter->run()
+#12 {main}

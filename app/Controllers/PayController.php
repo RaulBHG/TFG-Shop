@@ -8,6 +8,8 @@ use App\Entities\UserAdmin;
 use App\Entities\Product;
 use Stripe;
 
+use App\Libraries\libMail;
+
 class PayController extends Controller{
 
     public function stripe(){       
@@ -19,7 +21,7 @@ class PayController extends Controller{
         if ($this->request->isAJAX()) {
             Stripe\Stripe::setApiKey(STRIPE_SECRET);
             
-            $this->addOrder();  
+            $this->addOrder();
 
             $priceTotal = 0;
             $session = session();   
@@ -30,6 +32,8 @@ class PayController extends Controller{
                 $product = $entity->getDataById($prod["productId"])[0];
                 $priceTotal += $product["price"]*$prod["cantProd"];
             }
+
+            $priceTotal *= 100;
 
             $stripe = Stripe\Charge::create ([
                     "amount" => $priceTotal,
@@ -76,6 +80,8 @@ class PayController extends Controller{
             ];
             $orderEmail->insert($data);
         } 
+
+        libMail::sendMail("Su pedido con número <br> <b>".$locateId."</b> ha sido procesado correctamente. <br> Pronto lo recibirá.", $email);
 
 
     }

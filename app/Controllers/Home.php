@@ -8,7 +8,7 @@ use App\Entities;
 class Home extends BaseController
 {
     public function index()
-    {
+    {        
         helper("template");
         return view('index');
     }

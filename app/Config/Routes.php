@@ -35,7 +35,6 @@ $routes->get('/', 'Home::index');
 $routes->get('/shop', 'Home::loadView/shop');
 $routes->get('/product/(:any)', 'Home::loadView/product/$1');
 
-
 // ADMIN
 $routes->add('/adminPage', 'Admins\AdminController::index', ['filter' => 'authGuard']);
 $routes->add('/admin', 'Admins\SigninController::index');
@@ -56,6 +55,12 @@ $routes->add('/cest', 'CestController::index');
 // STRIPE CONTROLLER
 $routes->get("pay", "PayController::stripe");
 $routes->post("payment", "PayController::payment");
+
+// CONTACT CONTROLLER
+$routes->post('/contactController/(:any)', 'ContactController::$1');
+$routes->get('/contact', 'ContactController::index');
+
+
 
 
 /*
