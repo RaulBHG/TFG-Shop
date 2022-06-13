@@ -25,6 +25,7 @@ class App extends BaseConfig
      */
     //public $baseURL = '';
     public $baseURL = 'http://localhost/TFG-Shop/';
+    //public $baseURL = 'http://testraul.x10.mx/';
     
 
     /**
