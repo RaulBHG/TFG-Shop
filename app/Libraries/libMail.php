@@ -19,8 +19,8 @@ class libMail {
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             
-            $mail->Username = 'trabajosifp@gmail.com';
-            $mail->Password = 'raulcarlosgeo';
+            $mail->Username = 'tfgshoprosa@gmail.com';
+            $mail->Password = 'oqfyypclhhfkieqz';
 
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;

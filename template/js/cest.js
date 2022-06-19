@@ -95,7 +95,7 @@ $(document).ready(function(){
             console.log('Token Created!!');
             console.log(token)
             $('#token_response').html(JSON.stringify(token));
-    
+
             $.ajax({
                 url:baseUrl+"/payment",
                 method: 'post',

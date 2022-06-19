@@ -21,7 +21,7 @@ class SigninController extends Controller{
         $password = $this->request->getPost('password');
 
         $data = new UserAdmin($adminModel->where('email', $email)->first());
-
+        
         if($data){            
 
             $pass = $data->password;

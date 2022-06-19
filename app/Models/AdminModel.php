@@ -9,6 +9,7 @@ class AdminModel extends Model{
     protected $createdField  = 'created';
     protected $updatedField  = 'modified';
     protected $deletedField  = 'deleted_at';
+
     
     protected $allowedFields = [
         'email',
